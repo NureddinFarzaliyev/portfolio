@@ -2,8 +2,7 @@ import React from 'react'
 import { BackgroundBeams } from '../ui/background-beams'
 import { displayFont} from '@/app/utils/FontProvider'
 import IconSet from './IconSet'
-import { skillIcons } from '@/app/utils/IconProvider'
-import { socialLinkSet } from '@/app/utils/IconProvider'
+import { skillIcons, socialLinkSet } from '@/app/utils/IconProvider'
 
 function Hero() {
   return (
