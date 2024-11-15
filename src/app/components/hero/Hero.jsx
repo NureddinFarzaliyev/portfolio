@@ -1,5 +1,4 @@
 import React from 'react'
-import { BackgroundBeams } from '../ui/background-beams'
 import { displayFont} from '@/app/utils/FontProvider'
 import IconSet from './IconSet'
 import { skillIcons, socialLinkSet } from '@/app/utils/IconProvider'
@@ -13,7 +12,6 @@ function Hero() {
         <IconSet iconSet={skillIcons} />
         <p className='text-[rgba(255,255,255,0.2)] hover:text-[rgba(255,255,255,1)] transition-all cursor-pointer text-hover-glow mt-4'>Frontend / MERN-Stack Developer</p>
       </div>
-      <BackgroundBeams className="pointer-events-none"/>
     </div>
   )
 }

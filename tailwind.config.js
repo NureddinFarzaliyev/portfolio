@@ -1,9 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
- 
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
-// } = require("tailwindcss/lib/util/flattenColorPalette");
 } = require("./node_modules/tailwindcss/lib/util/flattenColorPalette");
 
 
@@ -18,13 +16,7 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
+
     extend: {
       
     },
