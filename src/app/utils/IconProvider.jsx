@@ -1,4 +1,4 @@
-import { FaReact, FaNodeJs, FaBootstrap, FaPython, FaYoutube, FaInstagram, FaGithub, FaLinkedin, FaCoffee, FaGitAlt, FaLinux, FaFigma, FaHtml5, FaCss3} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaBootstrap, FaPython, FaYoutube, FaInstagram, FaGithub, FaLinkedin, FaCoffee, FaGitAlt, FaLinux, FaFigma, FaHtml5, FaCss3, FaDev} from "react-icons/fa";
 import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandTypescript } from "react-icons/tb";
@@ -11,5 +11,6 @@ export const socialLinkSet = {
     'https://www.youtube.com/@nureddinfarzaliyev': FaYoutube,
     'https://www.github.com/nureddinfarzaliyev': FaGithub,
     'https://www.linkedin.com/in/nureddinfarzaliyev': FaLinkedin,
-    'https://www.kofe.al/farzaliyev': FaCoffee
+    'https://www.kofe.al/farzaliyev': FaCoffee,
+    'https://dev.to/nureddinfarzaliyev': FaDev,
 }
