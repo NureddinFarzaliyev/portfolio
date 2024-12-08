@@ -36,6 +36,22 @@ const projectData = [
         github: 'https://github.com/NureddinFarzaliyev/taskmanager',
         image: '/projectThumbnails/taskmanager.png',
     },
+    {
+        title: "Portfolio",
+        date: "12.24",
+        description: "This is my portfolio website. I've used React, Next.js, Tailwind CSS and Some UI Libraries to create this website. I've also used some animations to make the website more interactive.",
+        skills: ['react', 'next', 'tailwind'],
+        github: 'https://github.com/NureddinFarzaliyev/portfolio',
+        image: '/projectThumbnails/porfolio.png',
+    },
+    {
+        title: "Codecamp Projects",
+        date: "10.24-02.25",
+        description: "These are the projects I've made during the Codecamp at UNEC. I've used different technologies and libraries to create these projects. I've learned a lot of new things during the Codecamp.",
+        skills: ['html', 'css', 'bootstrap', 'tailwind', 'js', 'react',],
+        github: 'https://github.com/NureddinFarzaliyev/codecamp-unec',
+        image: '/projectThumbnails/codecamp.png',
+    }
 ]
 
 export default projectData

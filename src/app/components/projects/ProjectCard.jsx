@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 function ProjectCard({projectData}) {
   return (
-    <div className='xl:w-[30vw] bg-[#020914] p-4 rounded-md flex flex-col gap-3 justify-around'>
-        <img src={projectData.image} alt={projectData.title} className='rounded-md aspect-video' />
-        <h1 className='text-2xl font-semibold'>
+    <div className='xl:w-[30vw] bg-[#020914] p-4 rounded-md flex flex-col gap-3 justify-around hover:scale-105 cursor-pointer transition-all duration-300 card-glow'>
+        <img src={projectData.image} alt={projectData.title} className='rounded-md aspect-video object-cover' />
+        <h1 className='lg:text-2xl md:text-xl text-2xl font-semibold'>
             {projectData.title}
-            <span className='opacity-50 text-lg ml-2'> {projectData.date}</span>
+            <span className='opacity-50 lg:text-lg ml-2 text-sm'> {projectData.date}</span>
         </h1>
         <p className='text-sm opacity-80 md:h-32'>
             {projectData.description}
