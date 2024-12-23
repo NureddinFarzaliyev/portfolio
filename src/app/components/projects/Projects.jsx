@@ -10,7 +10,7 @@ function Projects() {
 
         <SectionHeader text={"my projects"} />
 
-        <div className="projects-container md:grid grid-cols-2">
+        <div className="projects-container md:grid grid-cols-2 lg:px-20 2xl:px-0">
             {projectData.map((project, i) => {
                 return(
                     <div className='m-5' key={i}>
