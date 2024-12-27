@@ -6,7 +6,7 @@ import SectionHeader from '../ui/SectionHeader'
 
 function Projects() {
   return (
-    <div className='h-dvh flex flex-col items-center'>
+    <div className='flex flex-col items-center'>
 
         <SectionHeader text={"my projects"} />
 
