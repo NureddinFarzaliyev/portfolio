@@ -1,10 +1,11 @@
 import React from 'react'
-import { displayFont} from '@/app/utils/FontProvider'
+import { displayFont } from '@/app/utils/FontProvider'
 import IconSet from './IconSet'
 import { skillIcons, socialLinkSet } from '@/app/utils/IconProvider'
 import { HeroHighlight } from '../ui/hero-highlight'
 
 function Hero() {
+  console.log(displayFont.className)
   return (
     <div className={`h-dvh flex flex-col justify-center items-center text-center gap-6`}>
       <HeroHighlight/>

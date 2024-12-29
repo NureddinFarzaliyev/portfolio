@@ -49,13 +49,7 @@ export const Timeline = ({
                 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500">
                 {item.title}
               </h3>
-              {item.paragraphs.split("\n").map((paragraph, index) => (
-                <p
-                  key={index}
-                  className="text-sm md:text-base text-white mb-3 font-medium">
-                  {paragraph}
-                </p>
-              ))}
+              {item.content}{" "}
             </div>
           </div>
         ))}
