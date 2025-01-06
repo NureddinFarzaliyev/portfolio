@@ -19,7 +19,7 @@ const Contact = () => {
     <div className='mt-64'>
         <SectionHeader text="Contact" />
 
-        <div className='grid md:grid-cols-2 gap-10 px-4 sm:px-20 relative pt-20 mb-96'> {/* temp mb */}
+        <div className='grid md:grid-cols-2 gap-10 px-4 sm:px-20 relative pt-20 md:pt-32 pb-20 md:pb-32 mb-32'> {/* temp mb */}
             <div>
                 <p className='mb-10 text-center w-full opacity-60'>Use this form to send a quick message to me.</p>
                 <form onSubmit={successMessage} action="https://send.pageclip.co/cewjDTaJ9R6N5PDlhRjKdsKtcfHp6bAU/portfolio-contact" method='post' className='pageclip-form flex flex-col gap-4 items-center'>
