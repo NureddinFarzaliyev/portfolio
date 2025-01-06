@@ -1,15 +1,17 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 
-function ProjectCard({projectData}) {
+function ProjectCard({projectData, projectId, activeProject, setActiveProject}) {
   return (
-    <div className='xl:w-[30vw] bg-[#020914] p-4 rounded-md flex flex-col gap-3 justify-around hover:scale-105 cursor-pointer transition-all duration-300 card-glow'>
+    <div onMouseEnter={() => {setActiveProject(projectId)}} onMouseLeave={() => {setActiveProject(null)}}
+    className={`${activeProject === null || activeProject === projectId ? '' : 'opacity-20'} projectCard xl:w-[30vw] bg-[#020914] p-4 rounded-md flex flex-col gap-3 justify-around hover:scale-105 cursor-pointer transition-all duration-300 card-glow`}>
         <img src={projectData.image} alt={projectData.title} className='rounded-md aspect-video object-cover' />
         <h1 className='lg:text-2xl md:text-xl text-2xl font-semibold'>
             {projectData.title}
-            <span className='opacity-50 lg:text-lg ml-2 text-sm'> {projectData.date}</span>
+            <span className='lg:text-lg ml-2 text-sm'> {projectData.date}</span>
         </h1>
-        <p className='text-sm opacity-80 md:h-32'>
+        <p className='text-sm md:h-32'>
             {projectData.description}
         </p>
 
