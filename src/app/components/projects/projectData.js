@@ -43,14 +43,24 @@ const projectData = [
         skills: ['react', 'next', 'tailwind'],
         github: 'https://github.com/NureddinFarzaliyev/portfolio',
         image: '/projectThumbnails/porfolio.png',
+        live: 'https://farzaliyev.netlify.app/',
     },
     {
         title: "Codecamp Projects",
         date: "10.24-02.25",
         description: "These are the projects I've made during the Codecamp at UNEC. I've used different technologies and libraries to create these projects. I've learned a lot of new things during the Codecamp.",
-        skills: ['html', 'css', 'bootstrap', 'tailwind', 'js', 'react',],
+        skills: ['bootstrap', 'tailwind', 'js', 'react', 'ts', 'supabase', 'redux'],
         github: 'https://github.com/NureddinFarzaliyev/codecamp-unec',
         image: '/projectThumbnails/codecamp.png',
+    },
+    {
+        title: "Criterion Clone",
+        date: "01.25",
+        description: "This is a final project for codecamp. This e-commerce web application is inspired by The Criterion Collection website. It includes features such as user auth, adding to cart, wishlist, blog and admin dashboard to add/remove products & blog posts and also manage users and orders.",
+        skills: ['react', 'tailwind', 'supabase', 'redux'],
+        github: 'https://github.com/NureddinFarzaliyev/criterion-clone',
+        image: '/projectThumbnails/criterion.png',
+        live: 'https://nfmatrixfinal.netlify.app/',
     }
 ]
 
