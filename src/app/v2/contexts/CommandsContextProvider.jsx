@@ -1,18 +1,18 @@
 "use client";
-
 import { CommandsContext } from "@/app/v2/contexts/CommandsContext";
+import { getResponseText } from "@/app/v2/utils/getResponseText";
 import { useState } from "react";
 
 const CommandsContextProvider = ({ children }) => {
   const initalLog = [
     {
       type: "response",
-      value: ``,
-    },
-    {
-      type: "response",
-      value:
-        "Welcome to my terminal. \n Type 'help' to see a list of available commands. \n",
+      value: (
+        <div className="mt-2 mb-4">
+          <p>Welcome to my terminal.</p>
+          <p>Type 'help' to see a list of available commands.</p>
+        </div>
+      ),
     },
   ];
   const [log, setLog] = useState(initalLog);
@@ -34,28 +34,16 @@ const CommandsContextProvider = ({ children }) => {
   const getResponse = (command) => {
     switch (command) {
       case "help":
-        return commands
-          .map((cmd) => `${cmd.command} - ${cmd.description}`)
-          .join("\n");
-      case "about":
-        return "I am Nureddin Farzaliyev. A software developer specializing in Frontend / MERN-Stack web development using technologies like React, Next.js, Node.js, Express, MongoDB etc.";
-      case "exp":
-        return `1. Full-Stack (MERN) Developer at Webluna Software (2025 Feb - Present)
-2. Instructor for Frontend & Node.js at Matrix Academy (2025 Mar - Present)
-3. Frontend Developer as Freelance Dev at global companies (2025 - Present)`;
-      case "edu":
-        return `1. Self-Taught Web Development (2018 - Present) 
-2. Frontend Web Development Course, Matrix Academy (2024)
-3. Bachelor's Degree at Computer Engineering (2024-2028)`;
-      case "skills":
-        return `- Frontend: HTML, CSS, TailwindCSS, Bootstrap, JavaScript, Typescript, React, Next.js, Redux Toolkit, Zustand, Supabase etc.
-- Backend: Node.js, Express.js, MongoDB, RESTful APIS
-- Tools: Git, Linux, Figma`;
+        return commands.map((cmd) => (
+          <p key={cmd.command}>
+            {cmd.command} - {cmd.description}
+          </p>
+        ));
       case "clear":
         setLog(initalLog);
         return;
       default:
-        return `Command not found: ${command}`;
+        return getResponseText(command);
     }
   };
 

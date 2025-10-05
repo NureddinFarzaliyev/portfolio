@@ -4,19 +4,10 @@ import { useContext } from "react";
 const TerminalLog = () => {
   const { checkIfCommandAvailable, log, prefix } = useContext(CommandsContext);
 
-  const parseTextWithLineBreaks = (text) => {
-    return text.split("\n").map((line, index) => (
-      <span key={index}>
-        {line}
-        <br />
-      </span>
-    ));
-  };
-
   return (
     <div>
       {log.map((item, index) => (
-        <p
+        <div
           key={index}
           style={{
             color:
@@ -27,9 +18,8 @@ const TerminalLog = () => {
                   : "white",
           }}
         >
-          {item.type === "command" && <span>{prefix}</span>}{" "}
-          {parseTextWithLineBreaks(item.value)}
-        </p>
+          {item.type === "command" && <span>{prefix}</span>} {item.value}
+        </div>
       ))}
     </div>
   );
