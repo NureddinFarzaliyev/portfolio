@@ -16,16 +16,14 @@ const CommandsContextProvider = ({ children }) => {
     },
   ];
   const [log, setLog] = useState(initalLog);
-
   const prefix = <span className="text-blue-500">nureddin@farzaliyev ~</span>;
 
   const commands = [
     { command: "help", description: "List all available commands" },
     { command: "about", description: "Learn more about me" },
+    { command: "clear", description: "Clear the terminal screen" },
     { command: "exp", description: "View my work experience" },
-    { command: "experience", description: "View my work experience" },
     { command: "edu", description: "View my educational background" },
-    { command: "education", description: "View my educational background" },
     { command: "skills", description: "List my technical skills" },
   ];
 
@@ -33,7 +31,7 @@ const CommandsContextProvider = ({ children }) => {
     return commands.some((c) => c.command === command);
   };
 
-  const execute = (command) => {
+  const getResponse = (command) => {
     switch (command) {
       case "help":
         return commands
@@ -42,12 +40,10 @@ const CommandsContextProvider = ({ children }) => {
       case "about":
         return "I am Nureddin Farzaliyev. A software developer specializing in Frontend / MERN-Stack web development using technologies like React, Next.js, Node.js, Express, MongoDB etc.";
       case "exp":
-      case "experience":
         return `1. Full-Stack (MERN) Developer at Webluna Software (2025 Feb - Present)
 2. Instructor for Frontend & Node.js at Matrix Academy (2025 Mar - Present)
 3. Frontend Developer as Freelance Dev at global companies (2025 - Present)`;
       case "edu":
-      case "education":
         return `1. Self-Taught Web Development (2018 - Present) 
 2. Frontend Web Development Course, Matrix Academy (2024)
 3. Bachelor's Degree at Computer Engineering (2024-2028)`;
@@ -55,9 +51,29 @@ const CommandsContextProvider = ({ children }) => {
         return `- Frontend: HTML, CSS, TailwindCSS, Bootstrap, JavaScript, Typescript, React, Next.js, Redux Toolkit, Zustand, Supabase etc.
 - Backend: Node.js, Express.js, MongoDB, RESTful APIS
 - Tools: Git, Linux, Figma`;
+      case "clear":
+        setLog(initalLog);
+        return;
       default:
         return `Command not found: ${command}`;
     }
+  };
+
+  const execute = (command) => {
+    const response = getResponse(command);
+    if (!response) return;
+
+    const logEntry = {
+      type: "command",
+      value: command,
+    };
+    const logResponse = {
+      type: "response",
+      value: getResponse(command),
+    };
+
+    const newLog = [...log, logEntry, logResponse];
+    setLog(newLog);
   };
 
   return (

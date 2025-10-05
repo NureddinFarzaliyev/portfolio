@@ -5,25 +5,12 @@ const TerminalInput = () => {
   const [inputColor, setInputColor] = useState("#C22426");
   const [inputValue, setInputValue] = useState("");
 
-  const { execute, setLog, checkIfCommandAvailable, prefix, log } =
+  const { execute, checkIfCommandAvailable, prefix } =
     useContext(CommandsContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
-
-    const logEntry = {
-      type: "command",
-      value: inputValue,
-    };
-
-    const logResponse = {
-      type: "response",
-      value: execute(inputValue),
-    };
-
-    const newLog = [...log, logEntry, logResponse];
-    setLog(newLog);
-
+    execute(inputValue);
     setInputValue("");
   };
 
