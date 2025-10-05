@@ -2,31 +2,7 @@ import projectData from "@/app/components/projects/projectData";
 import realProjectData from "@/app/components/realProjects/realProjectData";
 import TerminalHighlighted from "@/app/v2/components/TerminalHighlighted";
 import TerminalLink from "@/app/v2/components/TerminalLink";
-import TerminalSeperator from "@/app/v2/components/TerminalSeperator";
-
-const realProjects = (
-  <>
-    {realProjectData.map((p) => (
-      <p>
-        - <TerminalHighlighted text={p.title} />: {p.description}
-      </p>
-    ))}
-    <TerminalSeperator />
-    <p>
-      - Total <TerminalHighlighted text={"10+"} /> real projects
-    </p>
-  </>
-);
-
-const personalProjects = (
-  <>
-    {projectData.map((p) => (
-      <p>
-        - <TerminalHighlighted text={p.title} />: {p.description}
-      </p>
-    ))}
-  </>
-);
+import TerminalProjectsList from "@/app/v2/components/TerminalProjectsList";
 
 export const getResponseText = (command) => {
   switch (command) {
@@ -102,15 +78,29 @@ export const getResponseText = (command) => {
         </>
       );
     case "projects -r":
-      return realProjects;
+      return (
+        <>
+          <TerminalProjectsList projectData={realProjectData} />
+          <p className="mb-1">
+            Total <TerminalHighlighted text="10+" /> real-world projects.
+          </p>
+        </>
+      );
     case "projects -p":
-      return personalProjects;
+      return <TerminalProjectsList projectData={projectData} />;
     case "projects":
       return (
         <>
-          {realProjects}
-          <TerminalSeperator />
-          {personalProjects}
+          <p>
+            Total <TerminalHighlighted text="10+" /> real-world projects.
+          </p>
+          <p className="mb-2">
+            Use <TerminalHighlighted text="projects -r" /> to see real-world
+            projects and <TerminalHighlighted text="projects -p" /> to see
+            personal projects.
+          </p>
+          <TerminalProjectsList projectData={realProjectData} />
+          <TerminalProjectsList projectData={projectData} />
         </>
       );
     default:
