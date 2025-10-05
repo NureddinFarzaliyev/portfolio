@@ -1,5 +1,32 @@
+import projectData from "@/app/components/projects/projectData";
+import realProjectData from "@/app/components/realProjects/realProjectData";
 import TerminalHighlighted from "@/app/v2/components/TerminalHighlighted";
 import TerminalLink from "@/app/v2/components/TerminalLink";
+import TerminalSeperator from "@/app/v2/components/TerminalSeperator";
+
+const realProjects = (
+  <>
+    {realProjectData.map((p) => (
+      <p>
+        - <TerminalHighlighted text={p.title} />: {p.description}
+      </p>
+    ))}
+    <TerminalSeperator />
+    <p>
+      - Total <TerminalHighlighted text={"10+"} /> real projects
+    </p>
+  </>
+);
+
+const personalProjects = (
+  <>
+    {projectData.map((p) => (
+      <p>
+        - <TerminalHighlighted text={p.title} />: {p.description}
+      </p>
+    ))}
+  </>
+);
 
 export const getResponseText = (command) => {
   switch (command) {
@@ -72,6 +99,18 @@ export const getResponseText = (command) => {
           <p>
             - <TerminalHighlighted text="Tools:" />: Git, Linux, Figma
           </p>
+        </>
+      );
+    case "projects -r":
+      return realProjects;
+    case "projects -p":
+      return personalProjects;
+    case "projects":
+      return (
+        <>
+          {realProjects}
+          <TerminalSeperator />
+          {personalProjects}
         </>
       );
     default:

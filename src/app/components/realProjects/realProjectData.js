@@ -1,6 +1,6 @@
 const realProjectData = [
   {
-    title: "Brendmoto API",
+    title: "Brendmoto ERP API",
     date: "02.25",
     description:
       "A REST API for a complex commercial warehouse management system with a lot of different functionalities.",

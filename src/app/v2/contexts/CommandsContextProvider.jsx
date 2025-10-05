@@ -25,6 +25,9 @@ const CommandsContextProvider = ({ children }) => {
     { command: "exp", description: "View my work experience" },
     { command: "edu", description: "View my educational background" },
     { command: "skills", description: "List my technical skills" },
+    { command: "projects", description: "See all my projects" },
+    { command: "projects -r", description: "See my real-world projects" },
+    { command: "projects -p", description: "See my personal projects" },
   ];
 
   const checkIfCommandAvailable = (command) => {
