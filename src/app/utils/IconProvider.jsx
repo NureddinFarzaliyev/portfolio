@@ -14,6 +14,7 @@ import {
   FaCss3,
   FaDev,
   FaEnvelope,
+  FaVuejs,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -38,11 +39,12 @@ export const skillIcons = [
   IoLogoJavascript,
   TbBrandTypescript,
   FaReact,
+  SiRedux,
   SiNextdotjs,
+  FaVuejs,
   FaNodeJs,
   SiExpress,
   SiMongodb,
-  SiRedux,
   SiSupabase,
 ];
 

@@ -21,7 +21,7 @@ function Hero() {
       <div>
         <IconSet iconSet={skillIcons} />
         <p className="text-[rgba(255,255,255,0.2)] hover:text-[rgba(255,255,255,1)] text-md md:text-xl transition-all cursor-pointer text-hover-glow mt-4 relative z-40">
-          Frontend / MERN-Stack Developer
+          Web Developer
         </p>
       </div>
     </div>

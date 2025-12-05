@@ -213,14 +213,19 @@ export const timelineData = [
   {
     title: "2025",
     content: (
-      <div className="flex flex-col sm:flex-row gap-4">
+      <>
+        <img
+          className="mb-4"
+          src="https://skillicons.dev/icons?i=vue,pinia,jest"
+          alt="vue"
+        />
         <p>
           🌎 During 2025, I've engaged in a lot of other very interesting &
           exciting projects as <b>Frontend & MERN-Stack</b> developer for both{" "}
           <b>local</b> and <b>international partners</b> which highly improved
           my experience in various types of web systems.
         </p>
-      </div>
+      </>
     ),
   },
   {

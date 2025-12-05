@@ -28,7 +28,7 @@ function RealProjects() {
           className={`projectCard xl:w-[30vw] bg-[#020914] p-4 m-5 rounded-md flex flex-col items-center justify-center gap-3 card-glow`}
         >
           <span className="opacity-60 text-xl">Total</span>
-          <span className="text-7xl font-bold">9+</span>
+          <span className="text-7xl font-bold">10+</span>
           <span className="opacity-60 text-xl">Real Projects</span>
         </div>
       </div>
