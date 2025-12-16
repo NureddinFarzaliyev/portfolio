@@ -216,7 +216,7 @@ export const timelineData = [
       <>
         <img
           className="mb-4"
-          src="https://skillicons.dev/icons?i=vue,pinia,jest"
+          src="https://skillicons.dev/icons?i=vue,pinia,astro,jest"
           alt="vue"
         />
         <p>
