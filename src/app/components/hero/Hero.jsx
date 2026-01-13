@@ -4,6 +4,7 @@ import IconSet from "./IconSet";
 import { skillIcons, socialLinkSet } from "@/app/utils/IconProvider";
 import { HeroHighlight } from "../ui/hero-highlight";
 import Link from "next/link";
+import { FaFilePdf } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -25,12 +26,21 @@ function Hero() {
           Web Developer
         </p>
       </div>
-      <Link
-        href="/v2"
-        className="z-[9999] text-white bg-[#0F111A] font-mono py-2 px-4 rounded-sm text-sm opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
-      >
-        Check out the Portfolio V2!
-      </Link>
+      <div className="flex gap-2">
+        <Link
+          href="/v2"
+          className="z-[9999] text-white bg-[#0F111A] font-mono py-2 px-4 rounded-sm text-xs opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+        >
+          Check out the Portfolio V2!
+        </Link>
+        <Link
+          href="https://raw.githubusercontent.com/NureddinFarzaliyev/resume/master/Nureddin_Farzaliyev_CV.pdf"
+          className="z-[9999] text-black bg-white/80 font-semibold py-2 px-4 rounded-sm text-xs opacity-80 hover:opacity-100 transition-opacity cursor-pointer "
+          target="_blank"
+        >
+          Resume
+        </Link>
+      </div>
     </div>
   );
 }

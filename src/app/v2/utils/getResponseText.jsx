@@ -103,6 +103,15 @@ export const getResponseText = (command) => {
           <TerminalProjectsList projectData={projectData} />
         </>
       );
+    case "cv":
+      return (
+        <>
+          <TerminalLink
+            href="https://raw.githubusercontent.com/NureddinFarzaliyev/resume/master/Nureddin_Farzaliyev_CV.pdf"
+            text="Click this link to download my CV."
+          />
+        </>
+      );
     default:
       return `Command not found: ${command}`;
   }

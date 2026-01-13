@@ -3,7 +3,6 @@ import {
   FaNodeJs,
   FaBootstrap,
   FaPython,
-  FaYoutube,
   FaGithub,
   FaLinkedin,
   FaCoffee,
@@ -15,6 +14,7 @@ import {
   FaDev,
   FaEnvelope,
   FaVuejs,
+  FaFilePdf,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -51,10 +51,11 @@ export const skillIcons = [
 ];
 
 export const socialLinkSet = {
-  "https://www.youtube.com/@nureddinfarzaliyev": FaYoutube,
+  "https://raw.githubusercontent.com/NureddinFarzaliyev/resume/master/Nureddin_Farzaliyev_CV.pdf":
+    FaFilePdf,
   "https://www.github.com/nureddinfarzaliyev": FaGithub,
   "https://www.linkedin.com/in/nureddinfarzaliyev": FaLinkedin,
-  "https://www.kofe.al/farzaliyev": FaCoffee,
   "https://dev.to/nureddinfarzaliyev": FaDev,
-  "nureddin.fa@gmail.com": FaEnvelope,
+  "frzlyv@proton.me": FaEnvelope,
+  "https://www.kofe.al/farzaliyev": FaCoffee,
 };
