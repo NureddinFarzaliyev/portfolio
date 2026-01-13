@@ -3,6 +3,7 @@ import { displayFont } from "@/app/utils/FontProvider";
 import IconSet from "./IconSet";
 import { skillIcons, socialLinkSet } from "@/app/utils/IconProvider";
 import { HeroHighlight } from "../ui/hero-highlight";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -24,6 +25,12 @@ function Hero() {
           Web Developer
         </p>
       </div>
+      <Link
+        href="/v2"
+        className="z-[9999] text-white bg-[#0F111A] font-mono py-2 px-4 rounded-sm text-sm opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+      >
+        Check out the Portfolio V2!
+      </Link>
     </div>
   );
 }
