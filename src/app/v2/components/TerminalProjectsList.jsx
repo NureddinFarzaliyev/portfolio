@@ -17,6 +17,10 @@ const TerminalProjectsList = ({ projectData }) => {
             <div className="my-1 flex gap-2 flex-wrap">
               {p.skillsImage
                 ?.replace("https://skillicons.dev/icons?i=", "")
+                ?.replace(
+                  "https://skills.syvixor.com/api/icons?perline=15&i=",
+                  "",
+                )
                 ?.split(",")
                 ?.map((skill, index) => (
                   <SkillTag skill={skill} key={index} />

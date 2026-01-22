@@ -30,7 +30,7 @@ function ProjectCard({
       <p className="text-xs md:text-sm md:h-32">{projectData.description}</p>
 
       <div className="mt-5 flex flex-col 2xl:flex-row items-center 2xl:items-start gap-2 2xl:gap-0 justify-between">
-        <div className="flex gap-[6px]">
+        <div className="flex gap-[6px] pr-3">
           <img src={projectData.skillsImage} className="h-8" />
           {projectData.skills?.map((skillName, i) => (
             <img

@@ -66,14 +66,15 @@ export const getResponseText = (command) => {
           <p>
             - <TerminalHighlighted text="Frontend:" /> HTML, CSS, TailwindCSS,
             Bootstrap, JavaScript, Typescript, React, Next.js, Redux Toolkit,
-            Zustand, Supabase etc.
+            Zustand, Vue.js, Vue Query, Pinia, Astro.js, Supabase etc.
           </p>
           <p>
-            - <TerminalHighlighted text="Backend:" /> Node.js, Express.js,
-            MongoDB, RESTful APIS
+            - <TerminalHighlighted text="Backend:" /> Node.js, Express.js, tRPC,
+            Zod, Joi, MongoDB, PostgreSQL, Drizzle ORM, RESTful APIS
           </p>
           <p>
-            - <TerminalHighlighted text="Tools:" />: Git, Linux, Figma
+            - <TerminalHighlighted text="Tools:" />: Git, Linux, Docker, Bun,
+            Figma
           </p>
         </>
       );

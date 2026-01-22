@@ -24,6 +24,10 @@ import {
   SiSupabase,
   SiNextdotjs,
   SiAstro,
+  SiTrpc,
+  SiPostgresql,
+  SiDrizzle,
+  SiDocker,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandTypescript } from "react-icons/tb";
@@ -31,6 +35,7 @@ import { TbBrandTypescript } from "react-icons/tb";
 export const skillIcons = [
   FaPython,
   FaGitAlt,
+  SiDocker,
   FaLinux,
   FaFigma,
   FaHtml5,
@@ -46,7 +51,10 @@ export const skillIcons = [
   SiAstro,
   FaNodeJs,
   SiExpress,
+  SiTrpc,
   SiMongodb,
+  SiPostgresql,
+  SiDrizzle,
   SiSupabase,
 ];
 

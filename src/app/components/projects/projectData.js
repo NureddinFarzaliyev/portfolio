@@ -92,6 +92,16 @@ const projectData = [
     image: "/projectThumbnails/astrodevblog.png",
     skillsImage: "https://skillicons.dev/icons?i=ts,astro",
   },
+  {
+    title: "Fullstack E-commerce",
+    date: "01.26",
+    description:
+      "Full-stack monorepo e-commerce application which focuses on end-to-end type integrity between backend and frontend. Project utilizes tRPC for type-safe API communication, Bun for monorepo architecture and Drizzle ORM for type-safe PostgreSQL database interactions.",
+    github: "https://github.com/nureddinfarzaliyev/fullstack-ecommerce",
+    image: "/projectThumbnails/fullstack-ecommerce.png",
+    skillsImage:
+      "https://skills.syvixor.com/api/icons?perline=15&i=docker,bun,typescript,trpc,expressjs,nodejs,postgresql,drizzle,jwt,vuejs,tanstack,tailwindcss",
+  },
 ];
 
 export default projectData;
