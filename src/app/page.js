@@ -13,15 +13,19 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen" />
+        <link
+          rel="stylesheet"
+          href="https://s.pageclip.co/v1/pageclip.css"
+          media="screen"
+        />
       </Head>
       <Script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8" />
       <TracingBeam className={`text-white ${textFont.className}`}>
         {/* <div className={`text-white ${textFont.className}`}> */}
         {/* <Tracing /> */}
         <Hero />
-        <Projects />
         <RealProjects />
+        <Projects />
         <TimelineComponent />
         <Contact />
         {/* </div> */}
