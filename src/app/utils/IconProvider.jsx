@@ -15,6 +15,7 @@ import {
   FaEnvelope,
   FaVuejs,
   FaFilePdf,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -28,6 +29,7 @@ import {
   SiPostgresql,
   SiDrizzle,
   SiDocker,
+  SiSpring,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandTypescript } from "react-icons/tb";
@@ -56,6 +58,8 @@ export const skillIcons = [
   SiPostgresql,
   SiDrizzle,
   SiSupabase,
+  FaJava,
+  SiSpring,
 ];
 
 export const socialLinkSet = {

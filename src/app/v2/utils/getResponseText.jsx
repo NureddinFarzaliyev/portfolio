@@ -9,43 +9,45 @@ export const getResponseText = (command) => {
     case "about":
       return (
         <>
-          I am Nureddin Farzaliyev. A software developer specializing in
-          Frontend / MERN-Stack web development using technologies like React,
-          Next.js, Node.js, Express, MongoDB etc.
+          I am Nureddin Farzaliyev. A software engineer specializing in
+          fullstack web development using technologies like React, Next.js,
+          Node.js, Express, Java Spring Boot, MongoDB, PostgreSQL etc.
         </>
       );
     case "exp":
       return (
         <>
           <p>
-            1. <TerminalHighlighted text="Full-Stack (MERN) Developer" /> at
-            <TerminalLink
-              className="mx-[1ch]"
-              href="https://webluna.org/"
-              text="Webluna Software"
-            />
-            (2025 Feb - Present)
-          </p>
-          <p>
-            2. <TerminalHighlighted text="Instructor" /> for Frontend & Node.js
-            at{" "}
+            1. <TerminalHighlighted text="Mentor" /> for Frontend & Node.js at{" "}
             <TerminalLink
               className="mx-[1ch]"
               href="https://matrixacademy.edu.az/"
               text="Matrix Academy"
             />
-            (2025 Mar - Present)
+            (2025 Mar - 2026 Jun)
           </p>
           <p>
-            3. <TerminalHighlighted text="Frontend Developer" /> as Freelance
-            Dev at global companies (2025 - Present)
+            2. <TerminalHighlighted text="Full-Stack (MERN) Developer" /> at
+            <TerminalLink
+              className="mx-[1ch]"
+              href="https://webluna.org/"
+              text="Webluna Software"
+            />
+            (2025 Feb - 2025 Dec)
+          </p>
+          <p>
+            3. <TerminalHighlighted text="Frontend Developer" /> at Exploit
+            (2025 Mar - 2025 Oct)
           </p>
         </>
       );
     case "edu":
       return (
         <>
-          <p>1. Self-Taught Web Development (2018 - Present) </p>
+          <p>
+            1. Bachelor's Degree at Computer Engineering,{" "}
+            <TerminalLink href="https://unec.edu.az/" text="UNEC" /> (2024-2028)
+          </p>
           <p>
             2. Frontend Web Development Course,{" "}
             <TerminalLink
@@ -54,10 +56,8 @@ export const getResponseText = (command) => {
             />{" "}
             (2024)
           </p>
-          <p>
-            3. Bachelor's Degree at Computer Engineering,{" "}
-            <TerminalLink href="https://unec.edu.az/" text="UNEC" /> (2024-2028)
-          </p>
+
+          <p>3. Self-Taught Web Development (2018 - Present) </p>
         </>
       );
     case "skills":
@@ -69,12 +69,12 @@ export const getResponseText = (command) => {
             Zustand, Vue.js, Vue Query, Pinia, Astro.js, Supabase etc.
           </p>
           <p>
-            - <TerminalHighlighted text="Backend:" /> Node.js, Express.js, tRPC,
-            Zod, Joi, MongoDB, PostgreSQL, Drizzle ORM, RESTful APIS
+            - <TerminalHighlighted text="Backend:" /> Node.js, Express.js, Zod,
+            Joi, MongoDB, PostgreSQL, Java Spring Boot, ORMs, RPCs, RESTful APIS
           </p>
           <p>
             - <TerminalHighlighted text="Tools:" />: Git, Linux, Docker, Bun,
-            Figma
+            Figma, Vite, Swagger
           </p>
         </>
       );

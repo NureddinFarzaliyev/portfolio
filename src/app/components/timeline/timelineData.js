@@ -210,6 +210,7 @@ export const timelineData = [
       </div>
     ),
   },
+
   {
     title: "2025",
     content: (
@@ -224,6 +225,23 @@ export const timelineData = [
           exciting projects as <b>Frontend & MERN-Stack</b> developer for both{" "}
           <b>local</b> and <b>international partners</b> which highly improved
           my experience in various types of web systems.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "2026",
+    content: (
+      <>
+        <img
+          className="mb-4"
+          src="https://skillicons.dev/icons?i=java,spring,postgresql"
+          alt="vue"
+        />
+        <p>
+          ☕ In 2026, I've improved my backend development skills by learning{" "}
+          <b>Java & Spring Boot</b> by building REST APIs & Full-Stack
+          Applications{" "}
         </p>
       </>
     ),

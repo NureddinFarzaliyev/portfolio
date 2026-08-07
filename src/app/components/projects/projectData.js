@@ -1,5 +1,56 @@
 const projectData = [
   {
+    title: "Java Transactions API",
+    date: "08.01",
+    description:
+      "REST API for managing financial transactions built with Java, Spring Boot, and PostgreSQL. Implemented JWT-based authentication with Spring Security.",
+    github: "https://github.com/nureddinfarzaliyev/java-transactions-api",
+    image: "/projectThumbnails/java-transactions-api.png",
+    skillsImage:
+      "https://skills.syvixor.com/api/icons?perline=15&i=java,spring,springboot,jwt,docker,postgresql",
+  },
+  {
+    title: "Fullstack E-commerce",
+    date: "01.26",
+    description:
+      "Full-stack monorepo e-commerce application which focuses on end-to-end type integrity between backend and frontend. Project utilizes tRPC for type-safe API communication, Bun for monorepo architecture and Drizzle ORM for type-safe PostgreSQL database interactions.",
+    github: "https://github.com/nureddinfarzaliyev/fullstack-ecommerce",
+    image: "/projectThumbnails/fullstack-ecommerce.png",
+    skillsImage:
+      "https://skills.syvixor.com/api/icons?perline=15&i=docker,bun,typescript,trpc,expressjs,nodejs,postgresql,drizzle,jwt,vuejs,tanstack,tailwindcss",
+  },
+  {
+    title: "Vue Spotify Client",
+    date: "12.25",
+    description:
+      "A spotify client built with Vue.js and PrimeVue UI library. It utilizes Spotify Web API to fetch and display user data, playlists, and tracks. This app also includes a feature to truly shuffle songs from a chosen playlist and create temporary shuffled playlist.",
+    github: "https://github.com/nureddinfarzaliyev/vue-spotify-client",
+    image: "/projectThumbnails/vuespotify.png",
+    skillsImage: "https://skillicons.dev/icons?i=ts,vue,pinia,tailwindcss",
+  },
+
+  {
+    title: "Criterion Clone",
+    date: "01.25",
+    description:
+      "This is a final project for codecamp. This e-commerce web application is inspired by The Criterion Collection website. It includes features such as user auth, adding to cart, wishlist, blog and admin dashboard to add/remove products & blog posts and also manage users and orders.",
+    github: "https://github.com/NureddinFarzaliyev/criterion-clone",
+    image: "/projectThumbnails/criterion.png",
+    live: "https://nfmatrixfinal.netlify.app/",
+    skillsImage:
+      "https://skillicons.dev/icons?i=react,redux,supabase,tailwindcss",
+  },
+  {
+    title: "Codecamp Projects",
+    date: "10.24-02.25",
+    description:
+      "These are the projects I've made during the Codecamp at UNEC. I've used different technologies and libraries to create these projects. I've learned a lot of new things during the Codecamp.",
+    github: "https://github.com/NureddinFarzaliyev/codecamp-unec",
+    image: "/projectThumbnails/codecamp.png",
+    skillsImage:
+      "https://skillicons.dev/icons?i=js,ts,react,redux,supabase,tailwindcss,bootstrap",
+  },
+  {
     title: "Advanced Note App",
     date: "09.24",
     description:
@@ -43,6 +94,7 @@ const projectData = [
     image: "/projectThumbnails/taskmanager.png",
     skillsImage: "https://skillicons.dev/icons?i=js,mongo,express,nodejs",
   },
+
   {
     title: "Portfolio",
     date: "12.24",
@@ -54,36 +106,6 @@ const projectData = [
     skillsImage: "https://skillicons.dev/icons?i=react,nextjs,tailwindcss",
   },
   {
-    title: "Codecamp Projects",
-    date: "10.24-02.25",
-    description:
-      "These are the projects I've made during the Codecamp at UNEC. I've used different technologies and libraries to create these projects. I've learned a lot of new things during the Codecamp.",
-    github: "https://github.com/NureddinFarzaliyev/codecamp-unec",
-    image: "/projectThumbnails/codecamp.png",
-    skillsImage:
-      "https://skillicons.dev/icons?i=js,ts,react,redux,supabase,tailwindcss,bootstrap",
-  },
-  {
-    title: "Criterion Clone",
-    date: "01.25",
-    description:
-      "This is a final project for codecamp. This e-commerce web application is inspired by The Criterion Collection website. It includes features such as user auth, adding to cart, wishlist, blog and admin dashboard to add/remove products & blog posts and also manage users and orders.",
-    github: "https://github.com/NureddinFarzaliyev/criterion-clone",
-    image: "/projectThumbnails/criterion.png",
-    live: "https://nfmatrixfinal.netlify.app/",
-    skillsImage:
-      "https://skillicons.dev/icons?i=react,redux,supabase,tailwindcss",
-  },
-  {
-    title: "Vue Spotify Client",
-    date: "12.25",
-    description:
-      "A spotify client built with Vue.js and PrimeVue UI library. It utilizes Spotify Web API to fetch and display user data, playlists, and tracks. This app also includes a feature to truly shuffle songs from a chosen playlist and create temporary shuffled playlist.",
-    github: "https://github.com/nureddinfarzaliyev/vue-spotify-client",
-    image: "/projectThumbnails/vuespotify.png",
-    skillsImage: "https://skillicons.dev/icons?i=ts,vue,pinia,tailwindcss",
-  },
-  {
     title: "Astro Devblog",
     date: "12.25",
     description:
@@ -91,16 +113,6 @@ const projectData = [
     github: "https://github.com/nureddinfarzaliyev/astro-devblog",
     image: "/projectThumbnails/astrodevblog.png",
     skillsImage: "https://skillicons.dev/icons?i=ts,astro",
-  },
-  {
-    title: "Fullstack E-commerce",
-    date: "01.26",
-    description:
-      "Full-stack monorepo e-commerce application which focuses on end-to-end type integrity between backend and frontend. Project utilizes tRPC for type-safe API communication, Bun for monorepo architecture and Drizzle ORM for type-safe PostgreSQL database interactions.",
-    github: "https://github.com/nureddinfarzaliyev/fullstack-ecommerce",
-    image: "/projectThumbnails/fullstack-ecommerce.png",
-    skillsImage:
-      "https://skills.syvixor.com/api/icons?perline=15&i=docker,bun,typescript,trpc,expressjs,nodejs,postgresql,drizzle,jwt,vuejs,tanstack,tailwindcss",
   },
 ];
 
