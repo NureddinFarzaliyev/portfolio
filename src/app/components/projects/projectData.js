@@ -1,5 +1,15 @@
 const projectData = [
   {
+    title: "Fullstack Trello Clone",
+    date: "09.01",
+    description:
+      "Collaborative invitation-based real-time task management application built with Java Spring Boot, WebSockets, PostgreSQL, and React. Cookie based stateless JWT auth for both regular and websocket connections. Authorized WebSocket connections allow real-time updates. End-to-end type integrity between backend and frontend using OpenApi-Typescript. Dockerized for easy deployment.",
+    github: "https://github.com/nureddinfarzaliyev/fullstack-trello-clone",
+    image: "/projectThumbnails/trello.gif",
+    skillsImage:
+      "https://skills.syvixor.com/api/icons?perline=15&i=java,spring,springboot,websocket,jwt,postgresql,openapi,swagger,react,typescript,tailwindcss,docker",
+  },
+  {
     title: "Java Transactions API",
     date: "08.01",
     description:
