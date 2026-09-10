@@ -1,9 +1,13 @@
+import Image from "next/image";
+
 export const timelineData = [
   {
     title: "Mar 2018",
     content: (
       <>
-        <img
+        <Image
+          width={216}
+          height={48}
           className="mb-4"
           src="https://skillicons.dev/icons?i=html,css,sass,js"
           alt="html,css,js"
@@ -23,7 +27,9 @@ export const timelineData = [
     title: "2018 - 2023",
     content: (
       <>
-        <img
+        <Image
+          width={216}
+          height={48}
           className="mb-4"
           src="https://skillicons.dev/icons?i=git,github,figma,xd"
           alt="github,figma,xd"
@@ -35,7 +41,9 @@ export const timelineData = [
           using HTML, CSS and Javascript. But I knew that I had to go beyond
           Vanilla JS. I knew that I'll be faced with an endless horizon.
         </p>
-        <img
+        <Image
+          width={216}
+          height={48}
           className="my-4"
           src="https://skillicons.dev/icons?i=electron,nodejs,expressjs,mongodb"
           alt=""
@@ -53,7 +61,9 @@ export const timelineData = [
     title: "2023",
     content: (
       <>
-        <img
+        <Image
+          width={216}
+          height={48}
           className="mb-4"
           src="https://skillicons.dev/icons?i=tailwindcss,expressjs,react,nodejs"
           alt="tailwind,mongodb,express,react,node"
@@ -82,7 +92,9 @@ export const timelineData = [
     title: "Summer 2024",
     content: (
       <>
-        <img
+        <Image
+          width={273}
+          height={48}
           className="mb-4"
           src="https://skillicons.dev/icons?i=typescript,mongodb,expressjs,react,nodejs"
           alt="tailwind,mongodb,express,react,node"
@@ -92,7 +104,9 @@ export const timelineData = [
           href="https://github.com/nureddinfarzaliyev"
           target="_blank"
         >
-          <img
+          <Image
+            width={33}
+            height={33}
             src="https://skillicons.dev/icons?i=github"
             alt="github"
             className="h-8"
@@ -119,7 +133,9 @@ export const timelineData = [
     content: (
       <div className="flex flex-col sm:flex-row gap-4">
         <div className="shrink-0 w-[150px] md:w-[100px] lg:w-[150px] rounded-lg overflow-hidden">
-          <img
+          <Image
+            width={100}
+            height={100}
             src="/icons/unec.png"
             className="w-[100%] rounded-lg"
             alt="unec"
@@ -141,7 +157,9 @@ export const timelineData = [
       <div>
         <div className="flex flex-col sm:flex-row gap-4">
           <div className="shrink-0 w-[150px] md:w-[100px] lg:w-[150px] rounded-lg overflow-hidden">
-            <img
+            <Image
+              width={100}
+              height={100}
               src="/icons/matrix.png"
               className="w-[100%] rounded-lg"
               alt="matrix logo"
@@ -161,7 +179,9 @@ export const timelineData = [
           href="https://github.com/nureddinfarzaliyev/codecamp-unec"
           target="_blank"
         >
-          <img
+          <Image
+            width={33}
+            height={33}
             src="https://skillicons.dev/icons?i=github"
             alt="github"
             className="h-8"
@@ -178,7 +198,9 @@ export const timelineData = [
     content: (
       <div className="flex flex-col sm:flex-row gap-4">
         <div className="shrink-0 w-[150px] md:w-[100px] lg:w-[150px] rounded-lg overflow-hidden">
-          <img
+          <Image
+            width={100}
+            height={100}
             src="/icons/webluna.png"
             className="w-[100%] rounded-lg"
             alt="webluna logo"
@@ -197,7 +219,9 @@ export const timelineData = [
     content: (
       <div className="flex flex-col sm:flex-row gap-4">
         <div className="shrink-0 w-[150px] md:w-[100px] lg:w-[150px] rounded-lg overflow-hidden">
-          <img
+          <Image
+            width={100}
+            height={100}
             src="/icons/matrix.png"
             className="w-[100%] rounded-lg"
             alt="matrix logo"
@@ -215,7 +239,9 @@ export const timelineData = [
     title: "2025",
     content: (
       <>
-        <img
+        <Image
+          width={216}
+          height={48}
           className="mb-4"
           src="https://skillicons.dev/icons?i=vue,pinia,astro,jest"
           alt="vue"
@@ -233,7 +259,9 @@ export const timelineData = [
     title: "2026",
     content: (
       <>
-        <img
+        <Image
+          width={329}
+          height={48}
           className="mb-4"
           // src="https://skillicons.dev/icons?i=java,spring,postgresql,websocket"
           src="https://skills.syvixor.com/api/icons?perline=15&i=docker,java,spring,springboot,postgresql,websocket"

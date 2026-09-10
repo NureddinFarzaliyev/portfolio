@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function ProjectCard({
   projectData,
@@ -18,7 +19,9 @@ function ProjectCard({
       }}
       className={`${activeProject === null || activeProject === projectId ? "" : "opacity-20"} projectCard xl:w-[30vw] bg-[#020914] p-4 rounded-md flex flex-col gap-3 justify-around hover:scale-105 cursor-pointer transition-all duration-300 card-glow`}
     >
-      <img
+      <Image
+        height={236}
+        width={420}
         src={projectData.image}
         alt={projectData.title}
         className="rounded-md aspect-video object-cover"
@@ -33,7 +36,7 @@ function ProjectCard({
         <div className="flex gap-[6px] pr-3">
           <img src={projectData.skillsImage} className="h-8" />
           {projectData.skills?.map((skillName, i) => (
-            <img
+            <Image
               src={`/icons/${skillName}.png`}
               key={i}
               height={32}
@@ -46,7 +49,12 @@ function ProjectCard({
             <Link href={projectData.youtube} target="_blank">
               <div className="flex items-center bg-white rounded-md text-black px-1 pl-2 text-xs gap-1 hover:scale-110 transition-transform">
                 <span>Video</span>
-                <img src="/icons/youtube.png" alt="yt" />
+                <Image
+                  width={36}
+                  height={36}
+                  src="/icons/youtube.png"
+                  alt="yt"
+                />
               </div>
             </Link>
           )}
@@ -54,7 +62,12 @@ function ProjectCard({
             <Link href={projectData.github} target="_blank">
               <div className="flex items-center bg-[#242938] rounded-md text-white px-1 pl-2 text-xs gap-1 hover:scale-110 transition-transform">
                 <span>Source</span>
-                <img src="/icons/github.png" alt="yt" />
+                <Image
+                  width={36}
+                  height={36}
+                  src="/icons/github.png"
+                  alt="yt"
+                />
               </div>
             </Link>
           )}
@@ -62,7 +75,7 @@ function ProjectCard({
             <Link href={projectData.live} target="_blank">
               <div className="flex items-center bg-black rounded-md text-white px-1 pl-2 text-xs gap-1 hover:scale-110 transition-transform">
                 <span>Live Demo</span>
-                <img src="/icons/web.png" alt="yt" />
+                <Image width={36} height={36} src="/icons/web.png" alt="yt" />
               </div>
             </Link>
           )}
