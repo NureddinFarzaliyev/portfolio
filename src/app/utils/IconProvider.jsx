@@ -30,6 +30,7 @@ import {
   SiDrizzle,
   SiDocker,
   SiSpring,
+  SiSocketdotio,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandTypescript } from "react-icons/tb";
@@ -60,6 +61,7 @@ export const skillIcons = [
   SiSupabase,
   FaJava,
   SiSpring,
+  SiSocketdotio,
 ];
 
 export const socialLinkSet = {

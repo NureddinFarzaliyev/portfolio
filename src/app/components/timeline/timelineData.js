@@ -235,13 +235,14 @@ export const timelineData = [
       <>
         <img
           className="mb-4"
-          src="https://skillicons.dev/icons?i=java,spring,postgresql"
+          // src="https://skillicons.dev/icons?i=java,spring,postgresql,websocket"
+          src="https://skills.syvixor.com/api/icons?perline=15&i=docker,java,spring,springboot,postgresql,websocket"
           alt="vue"
         />
         <p>
           ☕ In 2026, I've improved my backend development skills by learning{" "}
           <b>Java & Spring Boot</b> by building REST APIs & Full-Stack
-          Applications{" "}
+          Applications.{" "}
         </p>
       </>
     ),

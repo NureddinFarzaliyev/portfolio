@@ -1,7 +1,7 @@
 const projectData = [
   {
     title: "Fullstack Trello Clone",
-    date: "09.01",
+    date: "09.26",
     description:
       "Collaborative invitation-based real-time task management application built with Java Spring Boot, WebSockets, PostgreSQL, and React. Cookie based stateless JWT auth for both regular and websocket connections. Authorized WebSocket connections allow real-time updates. End-to-end type integrity between backend and frontend using OpenApi-Typescript. Dockerized for easy deployment.",
     github: "https://github.com/nureddinfarzaliyev/fullstack-trello-clone",
@@ -11,7 +11,7 @@ const projectData = [
   },
   {
     title: "Java Transactions API",
-    date: "08.01",
+    date: "08.26",
     description:
       "REST API for managing financial transactions built with Java, Spring Boot, and PostgreSQL. Implemented JWT-based authentication with Spring Security.",
     github: "https://github.com/nureddinfarzaliyev/java-transactions-api",
