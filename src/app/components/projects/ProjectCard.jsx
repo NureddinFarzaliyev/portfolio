@@ -19,13 +19,9 @@ function ProjectCard({
       }}
       className={`${activeProject === null || activeProject === projectId ? "" : "opacity-20"} projectCard xl:w-[30vw] bg-[#020914] p-4 rounded-md flex flex-col gap-3 justify-around hover:scale-105 cursor-pointer transition-all duration-300 card-glow`}
     >
-      <Image
-        height={236}
-        width={420}
-        src={projectData.image}
-        alt={projectData.title}
-        className="rounded-md aspect-video object-cover"
-      />
+      <div className="rounded-md aspect-video relative">
+        <Image fill src={projectData.image} alt={projectData.title} />
+      </div>
       <h1 className="lg:text-2xl md:text-xl text-lg font-semibold">
         {projectData.title}
         <span className="lg:text-lg ml-2 text-sm"> {projectData.date}</span>
