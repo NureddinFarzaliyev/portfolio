@@ -9,6 +9,7 @@ import Head from "next/head";
 import Script from "next/script";
 import RealProjects from "./components/realProjects/RealProjects";
 import Education from "@/app/components/education/Education";
+import Experience from "@/app/components/experience/Experience";
 
 export default function Home() {
   const jsonLd = {
@@ -55,6 +56,7 @@ export default function Home() {
         <RealProjects />
         <Projects />
         <Education />
+        <Experience />
         {/*<TimelineComponent />*/}
         <Contact />
         {/* </div> */}

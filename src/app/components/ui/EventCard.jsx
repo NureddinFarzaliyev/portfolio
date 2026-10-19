@@ -17,7 +17,7 @@ const EventCard = ({ data }) => {
         {data.highlights && (
           <ul className="list-disc pl-5 mt-3">
             {data.highlights?.map((highlight, idx) => (
-              <li key={idx} className="opacity-80 text-sm">
+              <li key={idx} className="opacity-80 text-sm max-w-lg">
                 {highlight}
               </li>
             ))}
