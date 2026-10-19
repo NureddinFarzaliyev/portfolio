@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import Head from "next/head";
 import Script from "next/script";
 import RealProjects from "./components/realProjects/RealProjects";
+import Education from "@/app/components/education/Education";
 
 export default function Home() {
   const jsonLd = {
@@ -53,7 +54,8 @@ export default function Home() {
         <Hero />
         <RealProjects />
         <Projects />
-        <TimelineComponent />
+        <Education />
+        {/*<TimelineComponent />*/}
         <Contact />
         {/* </div> */}
       </TracingBeam>
