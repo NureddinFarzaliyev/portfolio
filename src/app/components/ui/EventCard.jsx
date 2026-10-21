@@ -1,3 +1,4 @@
+import Skills from "@/app/components/ui/Skills";
 import Image from "next/image";
 
 const EventCard = ({ data }) => {
@@ -27,7 +28,10 @@ const EventCard = ({ data }) => {
           <p className="opacity-80 text-sm">
             {data.startYear} - {data.endYear}
           </p>
-          <p className="opacity-80 text-sm">{data.location}</p>
+          <p className="opacity-80 text-sm mb-4">{data.location}</p>
+          <div className="max-w-[500px]">
+            <Skills skills={data.skills} />
+          </div>
         </div>
       </div>
     </div>

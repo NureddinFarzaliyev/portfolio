@@ -7,8 +7,21 @@ export const experienceData = [
     location: "Baku, Azerbaijan",
     img: "/icons/matrix.png",
     highlights: [
-      "Organising practical Frontend & Backend development classes",
-      "Providing mentorship for students throughout the learning process",
+      "Organised practical Frontend & Backend development classes",
+      "Provided mentorship for students throughout the learning process",
+    ],
+    skills: [
+      "react",
+      "nextjs",
+      "nodejs",
+      "express",
+      "typescript",
+      "mongodb",
+      "mysql",
+      "jwt",
+      "bootstrap",
+      "tailwindcss",
+      "git",
     ],
   },
   {
@@ -22,6 +35,14 @@ export const experienceData = [
       "Designed complex animations for web applications",
       "Participated in frontend development of a web application and several landing pages",
     ],
+    skills: [
+      "react",
+      "motion",
+      "tailwindcss",
+      "nodejs",
+      "express",
+      "typescript",
+    ],
   },
   {
     title: "Full-Stack Web Developer",
@@ -33,6 +54,16 @@ export const experienceData = [
     highlights: [
       "Actively participated in architectural design of various projects",
       "Participated in full-stack development for complex ERP system, e-commerce website and form management software",
+    ],
+    skills: [
+      "nodejs",
+      "express",
+      "react",
+      "mongodb",
+      "jwt",
+      "bootstrap",
+      "typescript",
+      "swagger",
     ],
   },
 ];
