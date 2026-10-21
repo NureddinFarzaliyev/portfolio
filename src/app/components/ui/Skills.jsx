@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const baseUrl = "https://skills-icons.vercel.app/api/icons?i=";
 
-const Skills = ({ skills }) => {
+const Skills = ({ skills, disableHover }) => {
   if (!skills || skills.length === 0) {
     return null;
   }
@@ -41,7 +41,11 @@ const Skills = ({ skills }) => {
     <div className={`h-8`}>
       <div
         className="flex gap-1 relative cursor-pointer flex-wrap"
-        onMouseEnter={() => setIsHovered(true)}
+        onMouseEnter={() => {
+          if (!disableHover) {
+            setIsHovered(true);
+          }
+        }}
         onMouseLeave={() => setIsHovered(false)}
       >
         {visibleIcons.map((skill, idx) => (

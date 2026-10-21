@@ -1,12 +1,11 @@
 import Hero from "./components/hero/Hero";
 import { textFont } from "./utils/FontProvider";
-import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Head from "next/head";
 import Script from "next/script";
-import RealProjects from "./components/realProjects/RealProjects";
 import Education from "@/app/components/education/Education";
 import Experience from "@/app/components/experience/Experience";
+import NewProjects from "@/app/components/newProjects/NewProjects";
 
 export default function Home() {
   const jsonLd = {
@@ -48,8 +47,7 @@ export default function Home() {
       <Script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8" />
       <div className={`text-white ${textFont.className}`}>
         <Hero />
-        <RealProjects />
-        <Projects />
+        <NewProjects />
         <Education />
         <Experience />
         <Contact />
