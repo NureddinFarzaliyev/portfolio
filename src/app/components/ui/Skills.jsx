@@ -81,7 +81,7 @@ const Skills = ({ skills, disableHover }) => {
           </motion.div>
         ))}
         <motion.div
-          className={`w-8 h-8 rounded-full bg-gray-200 text-black font-bold flex items-center justify-center text-sm shadow-[rgba(0,0,0,0.35)_-5px_0px_5px] shadow-black/50 absolute`}
+          className={`w-8 h-8 rounded-full bg-[#1F1F23] text-[#E4E4E7] border border-[#2E2E33] font-bold flex items-center justify-center text-sm shadow-[rgba(0,0,0,0.35)_-5px_0px_5px] shadow-black/50 absolute`}
           style={{ left: (visibleIconsCount + 1) * 20 }}
           animate={{ opacity: isHovered ? 0 : 1, scale: isHovered ? 0.8 : 1 }}
           transition={{ type: "tween", duration: 0.2 }}

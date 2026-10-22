@@ -6,15 +6,15 @@ const CompanyBadge = ({ company }) => {
   }
 
   return (
-    <div className="bg-white/[0.05] rounded-lg p-1 pr-2 flex items-center text-sm w-fit">
+    <div className="bg-[#1F1F23] rounded-lg pl-0.5 pr-2 flex items-center text-sm w-fit h-8">
       <Image
         src={company.logo}
         alt={company.title}
-        height={32}
-        width={32}
+        height={28}
+        width={28}
         className="rounded-lg shrink-0"
       />
-      <span className="ml-2 text-sm opacity-90">@{company.title}</span>
+      <span className="ml-2 text-sm">@{company.title}</span>
     </div>
   );
 };

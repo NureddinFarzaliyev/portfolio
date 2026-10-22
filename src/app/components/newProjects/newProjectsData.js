@@ -150,7 +150,7 @@ export const newProjectsData = [
   },
   {
     title: "Matrix Forms",
-    date: "02.25",
+    date: "Feb 25",
     brief: "",
     description:
       "Full-Stack application to create forms and manage responses in a dashboard which includes functionalities such as creating different accounts with lower permissions, extracting form responses as an Xlsx file or customizing alert messages in a rich text editor.",
