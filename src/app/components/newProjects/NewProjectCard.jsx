@@ -4,7 +4,10 @@ import Image from "next/image";
 
 const NewProjectCard = ({ data }) => {
   return (
-    <div className="bg-[#0a0a0a] p-2 rounded-lg border border-white/[0.1] w-[400px] cursor-pointer">
+    <div
+      className="bg-[#0a0a0a] hover:bg-[#111] transition-all
+      p-2 rounded-lg border border-white/[0.1] w-[400px] cursor-pointer h-full"
+    >
       <Image
         src={data.image}
         width={400}

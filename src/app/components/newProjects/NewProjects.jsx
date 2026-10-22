@@ -1,4 +1,4 @@
-import NewProjectCard from "@/app/components/newProjects/NewProjectCard";
+import NewProjectCardPopup from "@/app/components/newProjects/NewProjectCardPopup";
 import { newProjectsData } from "@/app/components/newProjects/newProjectsData";
 import SectionHeader from "@/app/components/ui/SectionHeader";
 
@@ -8,7 +8,7 @@ const NewProjects = () => {
       <SectionHeader text="projects" />
       <div className="mt-10 flex flex-wrap gap-4 justify-center">
         {newProjectsData.map((data) => (
-          <NewProjectCard key={data.title} data={data} />
+          <NewProjectCardPopup key={data.title} data={data} />
         ))}
       </div>
     </section>

@@ -2,7 +2,8 @@ export const newProjectsData = [
   {
     title: "Fullstack Trello Clone",
     date: "09.26",
-    brief: "",
+    brief:
+      "A collaborative invitation-based real-time task management application.",
     description:
       "Collaborative invitation-based real-time task management application built with Java Spring Boot, WebSockets, PostgreSQL, and React. Cookie based stateless JWT auth for both regular and websocket connections. Authorized WebSocket connections allow real-time updates. End-to-end type integrity between backend and frontend using OpenApi-Typescript. Dockerized for easy deployment.",
     highlights: [],
@@ -45,7 +46,8 @@ export const newProjectsData = [
   {
     title: "Fullstack E-commerce",
     date: "01.26",
-    brief: "",
+    brief:
+      "Full-stack monorepo e-commerce application with end-to-end type integrity.",
     description:
       "Full-stack monorepo e-commerce application which focuses on end-to-end type integrity between backend and frontend. Project utilizes tRPC for type-safe API communication, Bun for monorepo architecture and Drizzle ORM for type-safe PostgreSQL database interactions.",
     highlights: [],
@@ -88,7 +90,7 @@ export const newProjectsData = [
   {
     title: "Brendmoto WEB API",
     date: "09.25",
-    brief: "",
+    brief: "A complete REST API for the e-commerce website.",
     description: "A complete REST API for the e-commerce website.",
     highlights: [],
     links: {
@@ -110,7 +112,7 @@ export const newProjectsData = [
     links: {
       github: "",
       youtube: "",
-      live: "https://lectura-az.netlify.app/",
+      live: "https://lectura.az/",
     },
     image: "/projectThumbnails/lectura.png",
     skills: ["ts", "react", "tailwind", "supabase"],

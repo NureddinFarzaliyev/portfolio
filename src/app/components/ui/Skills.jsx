@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const baseUrl = "https://skills-icons.vercel.app/api/icons?i=";
 
-const Skills = ({ skills, disableHover }) => {
+const Skills = ({ skills, disableHover, fullList }) => {
   if (!skills || skills.length === 0) {
     return null;
   }
@@ -20,11 +20,14 @@ const Skills = ({ skills, disableHover }) => {
 
   const iconSize = 32;
 
-  if (skills.length <= maxVisibleIcons) {
+  if (skills.length <= maxVisibleIcons || fullList) {
     return (
-      <div className={`flex gap-1`}>
+      <div className={`flex gap-1 flex-wrap`}>
         {skills.map((skill) => (
-          <div className="shadow-[rgba(0,0,0,0.35)_-5px_0px_5px] shadow-black/50 rounded-md shrink-0">
+          <div
+            className="shadow-[rgba(0,0,0,0.35)_-5px_0px_5px] shadow-black/50 rounded-md shrink-0"
+            key={skill}
+          >
             <Image
               src={`${baseUrl}${skill}`}
               alt={skill}
@@ -50,6 +53,7 @@ const Skills = ({ skills, disableHover }) => {
       >
         {visibleIcons.map((skill, idx) => (
           <motion.div
+            key={skill}
             className={`shadow-[rgba(0,0,0,0.35)_-5px_0px_5px] shadow-black/50 rounded-md shrink-0`}
             animate={{ x: isHovered ? 0 : idx * -10 }}
             transition={{ type: "tween", duration: 0.2 }}
@@ -64,6 +68,7 @@ const Skills = ({ skills, disableHover }) => {
         ))}
         {remainingIcons.map((skill, idx) => (
           <motion.div
+            key={skill}
             className="shadow-[rgba(0,0,0,0.35)_-5px_0px_5px] shadow-black/50 rounded-md shrink-0"
             initial={{ x: (idx + visibleIconsCount) * -10, opacity: 0 }}
             animate={{
