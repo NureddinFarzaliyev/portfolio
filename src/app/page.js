@@ -6,6 +6,7 @@ import Script from "next/script";
 import Education from "@/app/components/education/Education";
 import Experience from "@/app/components/experience/Experience";
 import NewProjects from "@/app/components/newProjects/NewProjects";
+import Activities from "@/app/components/activities/Activities";
 
 export default function Home() {
   const jsonLd = {
@@ -50,6 +51,7 @@ export default function Home() {
         <NewProjects />
         <Education />
         <Experience />
+        <Activities />
         <Contact />
       </div>
     </>

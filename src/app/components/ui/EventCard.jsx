@@ -26,7 +26,7 @@ const EventCard = ({ data }) => {
         )}
         <div className="mt-3">
           <p className="opacity-80 text-sm">
-            {data.startYear} - {data.endYear}
+            {data.startYear} {data.endYear && "-"} {data.endYear}
           </p>
           <p className="opacity-80 text-sm mb-4">{data.location}</p>
           <div className="max-w-[500px]">

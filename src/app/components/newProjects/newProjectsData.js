@@ -85,7 +85,7 @@ export const newProjectsData = [
       live: "",
     },
     image: "/projectThumbnails/vuespotify.png",
-    skills: ["ts", "vue", "pinia", "tailwindcss"],
+    skills: ["typescript", "vue", "pinia", "tailwindcss"],
   },
   {
     title: "Brendmoto WEB API",
@@ -99,7 +99,7 @@ export const newProjectsData = [
       live: "",
     },
     image: "/projectThumbnails/brendmoto_api.png",
-    skills: ["jwt", "ts", "mongo", "express", "nodejs"],
+    skills: ["jwt", "typescript", "mongo", "express", "nodejs"],
     company: { title: "WeblunaSoftware", logo: "/icons/webluna.png" },
   },
   {
@@ -115,7 +115,7 @@ export const newProjectsData = [
       live: "https://lectura.az/",
     },
     image: "/projectThumbnails/lectura.png",
-    skills: ["ts", "react", "tailwind", "supabase"],
+    skills: ["typescript", "react", "tailwind", "supabase"],
     company: { title: "", logo: "" },
   },
   {
@@ -147,7 +147,7 @@ export const newProjectsData = [
       live: "",
     },
     image: "/projectThumbnails/brendmoto_api.png",
-    skills: ["jwt", "js", "mongo", "express", "nodejs"],
+    skills: ["jwt", "javascript", "mongo", "express", "nodejs"],
     company: { title: "WeblunaSoftware", logo: "/icons/webluna.png" },
   },
   {
@@ -180,8 +180,8 @@ export const newProjectsData = [
     },
     image: "/projectThumbnails/codecamp.png",
     skills: [
-      "js",
-      "ts",
+      "javascript",
+      "typescript",
       "react",
       "redux",
       "supabase",
@@ -235,7 +235,15 @@ export const newProjectsData = [
       live: "",
     },
     image: "/projectThumbnails/noteapp.png",
-    skills: ["jwt", "ts", "mongo", "express", "react", "nodejs", "tailwindcss"],
+    skills: [
+      "jwt",
+      "typescript",
+      "mongo",
+      "express",
+      "react",
+      "nodejs",
+      "tailwindcss",
+    ],
     company: { title: "", logo: "" },
   },
   {
@@ -283,7 +291,7 @@ export const newProjectsData = [
       live: "",
     },
     image: "/projectThumbnails/taskmanager.png",
-    skills: ["js", "mongo", "express", "nodejs"],
+    skills: ["javascript", "mongo", "express", "nodejs"],
     company: { title: "", logo: "" },
   },
 ];
