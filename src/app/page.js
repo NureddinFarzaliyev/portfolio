@@ -7,6 +7,7 @@ import Education from "@/app/components/education/Education";
 import Experience from "@/app/components/experience/Experience";
 import NewProjects from "@/app/components/newProjects/NewProjects";
 import Activities from "@/app/components/activities/Activities";
+import ScrollToTopButton from "@/app/components/ui/ScrollToTopButton";
 
 export default function Home() {
   const jsonLd = {
@@ -47,6 +48,7 @@ export default function Home() {
       </Head>
       <Script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8" />
       <div className={`text-white ${textFont.className}`}>
+        <ScrollToTopButton />
         <Hero />
         <NewProjects />
         <Education />

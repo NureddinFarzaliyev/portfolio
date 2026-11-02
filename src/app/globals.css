@@ -43,3 +43,7 @@
 .beam-gradient {
     background-image: linear-gradient(to bottom, #3B7FED, #A755F7);
 } */
+
+html {
+  scroll-behavior: smooth;
+}
