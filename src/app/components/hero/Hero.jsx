@@ -1,9 +1,44 @@
 import React from "react";
 import { displayFont } from "@/app/utils/FontProvider";
-import IconSet from "./IconSet";
-import { skillIcons, socialLinkSet } from "@/app/utils/IconProvider";
 import { HeroHighlight } from "../ui/hero-highlight";
 import Link from "next/link";
+import Skills from "@/app/components/ui/Skills";
+
+const skills = [
+  "python",
+  "linux",
+  "docker",
+  "bun",
+  "html",
+  "css",
+  "bootstrap",
+  "tailwindcss",
+  "motion",
+  "radixui",
+  "figma",
+  "git",
+  "javascript",
+  "typescript",
+  "vite",
+  "react",
+  "redux",
+  "nextjs",
+  "zustand",
+  "vuejs",
+  "pinia",
+  "astro",
+  "nodejs",
+  "expressjs",
+  "trpc",
+  "jwt",
+  "mongodb",
+  "postgresql",
+  "drizzle",
+  "supabase",
+  "java",
+  "spring",
+  "websocket",
+];
 
 const NavButton = ({ href, children }) => {
   return (
@@ -45,19 +80,21 @@ function Hero() {
       className={`h-dvh flex flex-col justify-center items-center text-center gap-6`}
     >
       <HeroHighlight />
-      <IconSet linkSet={socialLinkSet} />
-      <h1
-        className={`font-bold px-5 py-1 text-4xl sm:text-7xl tracking-tight ${displayFont.className} text-glow`}
-      >
-        NUREDDIN
-        <br />
-        FARZALIYEV
-      </h1>
+      {/*<IconSet linkSet={socialLinkSet} />*/}
       <div>
-        <IconSet iconSet={skillIcons} />
-        <p className="text-[rgba(255,255,255,0.2)] hover:text-[rgba(255,255,255,1)] text-md md:text-xl transition-all cursor-pointer text-hover-glow mt-4 relative z-40">
-          Web Developer
+        <h1
+          className={`font-bold px-5 py-1 text-4xl sm:text-7xl tracking-tight ${displayFont.className} text-glow`}
+        >
+          NUREDDIN
+          <br />
+          FARZALIYEV
+        </h1>
+        <p className="text-[rgba(255,255,255,0.8)] hover:text-[rgba(255,255,255,1)] text-md md:text-xl transition-all cursor-pointer text-hover-glow relative z-40 mt-2 z-0">
+          Fullstack Web Developer
         </p>
+      </div>
+      <div className="opacity-80 px-4" style={{ filter: "grayscale(0.5)" }}>
+        <Skills skills={skills} disableHover fullList centerFullList />
       </div>
       <div className="flex gap-2 flex-wrap justify-center items-center z-[9999] px-4">
         {navLinks.map((link) => (

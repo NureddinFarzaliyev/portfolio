@@ -2,10 +2,11 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import classNames from "classnames";
 
 const baseUrl = "https://skills-icons.vercel.app/api/icons?i=";
 
-const Skills = ({ skills, disableHover, fullList }) => {
+const Skills = ({ skills, disableHover, fullList, centerFullList }) => {
   if (!skills || skills.length === 0) {
     return null;
   }
@@ -22,7 +23,12 @@ const Skills = ({ skills, disableHover, fullList }) => {
 
   if (skills.length <= maxVisibleIcons || fullList) {
     return (
-      <div className={`flex gap-1 flex-wrap`}>
+      <div
+        className={classNames(
+          `flex gap-1 flex-wrap`,
+          centerFullList && `justify-center`,
+        )}
+      >
         {skills.map((skill) => (
           <div
             className="group relative shadow-[rgba(0,0,0,0.35)_-5px_0px_5px] shadow-black/50 rounded-md shrink-0"
