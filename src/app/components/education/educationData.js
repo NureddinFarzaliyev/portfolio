@@ -11,6 +11,8 @@ export const educationData = [
   {
     title: "Matrix Academy",
     description: "Frontend Development",
+    descriptionLink:
+      "https://raw.githubusercontent.com/NureddinFarzaliyev/resume/master/certificates/MatrixAcademyFrontend.pdf",
     startYear: 2024,
     endYear: 2025,
     location: "Baku, Azerbaijan",

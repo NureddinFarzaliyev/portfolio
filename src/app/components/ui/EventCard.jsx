@@ -1,5 +1,6 @@
 import Skills from "@/app/components/ui/Skills";
 import Image from "next/image";
+import Link from "next/link";
 
 const EventCard = ({ data }) => {
   return (
@@ -14,7 +15,15 @@ const EventCard = ({ data }) => {
       </div>
       <div>
         <h3 className="text-2xl">{data.title}</h3>
-        <p className="opacity-80">{data.description}</p>
+        {data.descriptionLink ? (
+          <Link href={data.descriptionLink} target="_blank">
+            <p className="opacity-80 hover:opacity-100 transition-colors duration-200 underline">
+              {data.description}
+            </p>
+          </Link>
+        ) : (
+          <p className="opacity-80">{data.description}</p>
+        )}
         {data.highlights && (
           <ul className="list-disc pl-5 mt-3">
             {data.highlights?.map((highlight, idx) => (
