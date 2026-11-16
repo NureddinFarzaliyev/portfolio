@@ -6,7 +6,14 @@ export const newProjectsData = [
       "A collaborative invitation-based real-time task management application.",
     description:
       "Collaborative invitation-based real-time task management application built with Java Spring Boot, WebSockets, PostgreSQL, and React. Cookie based stateless JWT auth for both regular and websocket connections. Authorized WebSocket connections allow real-time updates. End-to-end type integrity between backend and frontend using OpenApi-Typescript. Dockerized for easy deployment.",
-    highlights: [],
+    highlights: [
+      "Real-time collaboration with WebSockets",
+      "Invitation-based access control for secure collaboration",
+      "Cookie-based stateless JWT authentication for both regular and WebSocket connections",
+      "End-to-end type integrity between backend and frontend using OpenApi-Typescript",
+      "Dockerized for easy deployment",
+      "Drag-and-drop UI functionality for task management",
+    ],
     links: {
       github: "https://github.com/nureddinfarzaliyev/fullstack-trello-clone",
       youtube: "",
@@ -29,12 +36,42 @@ export const newProjectsData = [
     ],
   },
   {
+    title: "MLH Agents Hackathon",
+    date: "08.26",
+    brief:
+      "Projects built during MLH Agents Week Hackathon with AI agents performing different tasks.",
+    description:
+      "Projects built during MLH Agents Week Hackathon. Includes AI agents performing different tasks such as code reviewer, roadmapper, terminal AI helper etc.",
+    highlights: [
+      "Roadmapper AI Agent: Generates a roadmap for a given project idea.",
+      "AI DB Planner Multi-Agent Web App: Generates a database schema based on user input and project requirements.",
+      "Terminal AI Helper Agent: Provides terminal commands and explanations based on user input.",
+      "GitHelper AI: Generates commit messages based on code changes.",
+      "Code Reviewer AI: Reviews code and provides feedback.",
+      "Dictionary Tutor Agent: Provides translations and definitions for words, saves them on db and creates quiz.",
+      "TicTacToe: Tic-tac-toe game with Bash made with Github Copilot.",
+    ],
+    links: {
+      github: "https://github.com/nureddinfarzaliyev/mlh-agents-hackathon",
+      youtube: "",
+      live: "",
+    },
+    image: "/projectThumbnails/mlh-agents.png",
+    skills: ["githubcopilot", "bash", "python"],
+  },
+  {
     title: "Java Transactions API",
     date: "08.26",
-    brief: "",
+    brief:
+      "REST API for financial transactions manager with user authentication.",
     description:
       "REST API for managing financial transactions built with Java, Spring Boot, and PostgreSQL. Implemented JWT-based authentication with Spring Security.",
-    highlights: [],
+    highlights: [
+      "Managing categories, transactions, and users",
+      "Unit and integration tests for API endpoints",
+      "JWT-based authentication with Spring Security",
+      "User registration and authentication",
+    ],
     links: {
       github: "https://github.com/nureddinfarzaliyev/java-transactions-api",
       youtube: "",
@@ -50,7 +87,13 @@ export const newProjectsData = [
       "Full-stack monorepo e-commerce application with end-to-end type integrity.",
     description:
       "Full-stack monorepo e-commerce application which focuses on end-to-end type integrity between backend and frontend. Project utilizes tRPC for type-safe API communication, Bun for monorepo architecture and Drizzle ORM for type-safe PostgreSQL database interactions.",
-    highlights: [],
+    highlights: [
+      "End-to-end type integrity between backend and frontend using tRPC",
+      "Monorepo architecture using Bun",
+      "Type-safe PostgreSQL database interactions using Drizzle ORM",
+      "JWT-based authentication for secure user access",
+      "Modern frontend built with Vue.js and TanStack Query",
+    ],
     links: {
       github: "https://github.com/nureddinfarzaliyev/fullstack-ecommerce",
       youtube: "",
@@ -59,15 +102,15 @@ export const newProjectsData = [
     image: "/projectThumbnails/fullstack-ecommerce.png",
     skills: [
       "docker",
-      "bun",
       "typescript",
       "trpc",
+      "vuejs",
+      "bun",
       "expressjs",
       "nodejs",
       "postgresql",
       "drizzle",
       "jwt",
-      "vuejs",
       "tanstack",
       "tailwindcss",
     ],
@@ -75,10 +118,15 @@ export const newProjectsData = [
   {
     title: "Vue Spotify Client",
     date: "12.25",
-    brief: "",
+    brief:
+      "Frontend client to connect and manage your Spotify library & true shuffle a playlist.",
     description:
-      "A spotify client built with Vue.js and PrimeVue UI library. It utilizes Spotify Web API to fetch and display user data, playlists, and tracks. This app also includes a feature to truly shuffle songs from a chosen playlist and create temporary shuffled playlist.",
-    highlights: [],
+      "A spotify client built with Vue.js and PrimeVue UI library. Utilizes Spotify Web API to fetch and display user data, playlists, and tracks. Also includes a feature to truly shuffle songs from a chosen playlist and create temporary shuffled playlist.",
+    highlights: [
+      "Connect your Spotify and browse your library.",
+      "Create a temporary playlist with truly shuffled songs from your playlists.",
+      "Browse artists, albums and playlists.",
+    ],
     links: {
       github: "https://github.com/nureddinfarzaliyev/vue-spotify-client",
       youtube: "",
@@ -90,41 +138,117 @@ export const newProjectsData = [
   {
     title: "Brendmoto WEB API",
     date: "09.25",
-    brief: "A complete REST API for the e-commerce website.",
-    description: "A complete REST API for the e-commerce website.",
-    highlights: [],
+    brief: "REST API for a multi-functional e-commerce website.",
+    description:
+      "REST API for the e-commerce website of the company 'BrendMoto' written with Node.js, Typescript & MongoDB which includes various features including campaigns, loyalty program, delivery tracking etc.",
+    highlights: [
+      "Role-based authentication and authorization",
+      "Security considerations such as rate limiting, input validation, error handling, logging, CSRF protection etc.",
+      "Fundamental e-commerce features such as product management, order processing, and user management",
+      "Management of static elements in website.",
+      "Loyalty program system with cashback functionality.",
+      "Custom order functionality for different types of products.",
+      "Installment request system with admin approval.",
+      "Notification system for status updates and other important events.",
+      "Sales campaigns with start and end dates, discounts, and other relevant information.",
+      "Functionalities for authenticated and non-authenticated users, including product browsing and order placement.",
+      "Delivery tracking system for users to track their orders in real-time.",
+    ],
     links: {
       github: "",
       youtube: "",
       live: "",
     },
     image: "/projectThumbnails/brendmoto_api.png",
-    skills: ["jwt", "typescript", "mongo", "express", "nodejs"],
+    skills: ["jwt", "typescript", "mongo", "express", "nodejs", "swagger"],
     company: { title: "WeblunaSoftware", logo: "/icons/webluna.png" },
   },
   {
     title: "Lectura",
     date: "08.25",
-    brief: "",
+    brief:
+      "A comprehensive multi-tenant class management system for teachers and students.",
     description:
-      "A comprehensive class management system with extensive features for teachers.",
-    highlights: [],
+      "A comprehensive multi-tenant class management system for teachers and students with features such as payment tracking, lesson schedules, groups, exam results, public student pages, tasks, lesson materials etc.",
+    highlights: [
+      "Multi-tenant organization management system which lets teachers to join different organizations and access their resources.",
+      "Complex permission manager system with micro permissions for every single action.",
+      "Students and groups.",
+      "Assigning notes for students",
+      "Adding student attendance data to the system.",
+      "Publishing exam results with a public page",
+      "Creating tasks for students",
+      "Uploading lesson materials",
+      "Personal page for each student which can be accessed by unique link. Student can track their own information, download assigned lesson materials or complete tasks from this page.",
+      "Complex finance management system with student payments and extra transactions.",
+      "Android app bundled with Gradle.",
+    ],
     links: {
       github: "",
       youtube: "",
       live: "https://lectura.az/",
     },
     image: "/projectThumbnails/lectura.png",
-    skills: ["typescript", "react", "tailwind", "supabase"],
+    skills: [
+      "typescript",
+      "react",
+      "tanstack",
+      "zustand",
+      "tailwind",
+      "supabase",
+      "postgresql",
+    ],
     company: { title: "", logo: "" },
+  },
+  {
+    title: "Exploit Landing Page",
+    date: "07.25",
+    brief: "Landing page for Exploit.",
+    description:
+      "Responsive and modern looking landing page for Exploit with React.js.",
+    highlights: [
+      "Landing page with general information about the company.",
+      "Responsive design with Tailwind CSS.",
+    ],
+    links: {
+      github: "",
+      youtube: "",
+      live: "",
+    },
+    image: "/projectThumbnails/exploit-landing.png",
+    skills: ["react", "tailwind"],
+    company: { title: "exploit", logo: "/icons/exploit.png" },
+  },
+  {
+    title: "BitLink Landing Page",
+    date: "05.25",
+    brief: "Landing page for BitLink.",
+    description:
+      "Responsive and modern looking landing page for BitLink with React.js.",
+    highlights: [
+      "Landing page with general information about the company.",
+      "Responsive design with Tailwind CSS.",
+    ],
+    links: {
+      github: "",
+      youtube: "",
+      live: "",
+    },
+    image: "/projectThumbnails/bitlink-landing.png",
+    skills: ["react", "tailwind"],
+    company: { title: "exploit", logo: "/icons/exploit.png" },
   },
   {
     title: "BDU TGT",
     date: "04.25",
-    brief: "",
+    brief: "Website for Baku State University's Youth Foundation.",
     description:
       "A website for the students of BDU (BSU) youth foundation which includes features such as registration for the organization or events, following latest news and projects of the organization.",
-    highlights: [],
+    highlights: [
+      "Landing page with general information about the foundation.",
+      "Sharing news, projects & events.",
+      "Registration for events.",
+    ],
     links: {
       github: "",
       youtube: "",
@@ -137,26 +261,42 @@ export const newProjectsData = [
   {
     title: "Brendmoto ERP API",
     date: "02.25",
-    brief: "",
+    brief: "REST API for Brendmoto ERP system.",
     description:
-      "A REST API for a complex commercial warehouse management system with a lot of different functionalities.",
-    highlights: [],
+      "A REST API for a complex commercial warehouse management system with various functionalities. Designed for the company 'BrendMoto'.",
+    highlights: [
+      "Complex permission manager with micro permissions for each action.",
+      "Warehouse management with products and employees.",
+      "Finance management system.",
+      "Different operations such as whole sales, retail sales, buys, repairments etc.",
+      "Transfer system between warehouses.",
+      "Edit & delete operations with admin verifications.",
+      "Customer tracking with official documents.",
+      "Automated document creation for employees and customers",
+      "Employee management with bonuses from operations, check-in and check-out hours, monthly salaries.",
+      "Stock checks and other complicated reports according to business needs.",
+    ],
     links: {
       github: "",
       youtube: "",
       live: "",
     },
     image: "/projectThumbnails/brendmoto_api.png",
-    skills: ["jwt", "javascript", "mongo", "express", "nodejs"],
+    skills: ["jwt", "javascript", "mongo", "express", "nodejs", "swagger"],
     company: { title: "WeblunaSoftware", logo: "/icons/webluna.png" },
   },
   {
     title: "Matrix Forms",
     date: "Feb 25",
-    brief: "",
+    brief: "Fullstack Form Management application for Matrix Academy.",
     description:
       "Full-Stack application to create forms and manage responses in a dashboard which includes functionalities such as creating different accounts with lower permissions, extracting form responses as an Xlsx file or customizing alert messages in a rich text editor.",
-    highlights: [],
+    highlights: [
+      "Publishing forms to collect information.",
+      "Use rich text editor to show alerts & other information.",
+      "See responses on admin dashboard.",
+      "Download results as XLSX",
+    ],
     links: {
       github: "",
       youtube: "",
@@ -169,10 +309,15 @@ export const newProjectsData = [
   {
     title: "Codecamp Projects",
     date: "10.24-02.25",
-    brief: "",
+    brief: "25+ projects built during UNEC CodeCamp course.",
     description:
-      "These are the projects I've made during the Codecamp at UNEC. I've used different technologies and libraries to create these projects. I've learned a lot of new things during the Codecamp.",
-    highlights: [],
+      "Projects built during the CodeCamp frontend course at UNEC organized by Matrix Academy. Includes 25+ projects focusing on different aspects of modern frontend development such as modern and responsive design, state management, API integration etc.",
+    highlights: [
+      "Full Projects: Clicon, Miniture, Poco, Sandbox, EcoMall, Cow Calculator, ToDo list, Clock, Movie/Book Tracker",
+      "React Projects: Bookapp, FakeShop, Grogin, GitHub Finder, Ovro Portfolio, Fresh Vial",
+      "Redux Projects: Counter, Products, CRUD Dashboard, Todo",
+      "Other Javascript based programming tasks.",
+    ],
     links: {
       github: "https://github.com/NureddinFarzaliyev/codecamp-unec",
       youtube: "",
@@ -193,10 +338,16 @@ export const newProjectsData = [
   {
     title: "Criterion Clone",
     date: "01.25",
-    brief: "",
+    brief: "Fullstack Criterion E-commerce website clone.",
     description:
-      "This is a final project for codecamp. This e-commerce web application is inspired by The Criterion Collection website. It includes features such as user auth, adding to cart, wishlist, blog and admin dashboard to add/remove products & blog posts and also manage users and orders.",
-    highlights: [],
+      "E-commerce web application inspired by The Criterion Collection website, built as the final project for CodeCamp. Includes features such as user auth, adding to cart, wishlist, blog and admin dashboard to add/remove products & blog posts and also manage users and orders.",
+    highlights: [
+      "User authentication and autherization.",
+      "Cart, wishlist and other fundamental e-commerce features.",
+      "Blog section.",
+      "Admin dashboard with blog and product CRUD.",
+      "Order tracking and statistics on admin dashboard.",
+    ],
     links: {
       github: "https://github.com/NureddinFarzaliyev/criterion-clone",
       youtube: "",
@@ -209,9 +360,8 @@ export const newProjectsData = [
   {
     title: "Portfolio",
     date: "12.24",
-    brief: "",
-    description:
-      "This is my portfolio website. I've used React, Next.js, Tailwind CSS and Some UI Libraries to create this website. I've also used some animations to make the website more interactive.",
+    brief: "My portfolio website.",
+    description: "My portfolio built with Next.js.",
     highlights: [],
     links: {
       github: "https://github.com/NureddinFarzaliyev/portfolio",
@@ -225,10 +375,17 @@ export const newProjectsData = [
   {
     title: "Advanced Note App",
     date: "09.24",
-    brief: "",
+    brief:
+      "Fullstack note-taking application with an interface similar to a file explorer.",
     description:
       "This is an advanced note-taking application with markdown support and folder structure. Application has rich features such as renaming, deleting folders and files. Customizing the look of app is also possible. Registration is required to use the application.",
-    highlights: [],
+    highlights: [
+      "User authentication & authorization",
+      "Storing file information on MongoDB",
+      "Notes, folders & metadata CRUD.",
+      "Different themes",
+      "Markdown rich text support.",
+    ],
     links: {
       github: "https://github.com/NureddinFarzaliyev/noteapp-advanced",
       youtube: "https://www.youtube.com/watch?v=kZohKAoD9ag",
@@ -249,10 +406,15 @@ export const newProjectsData = [
   {
     title: "Cinexplore AI",
     date: "08.24",
-    brief: "",
+    brief: "Fullstack Movie & TV Series tracker app with AI recommendations.",
     description:
-      "Cinexplore is an app which you can add movies & TV shows to your profile. You can explore new shows and movies based on your interests. You can also use our AI Recommendation tool to get customized recommendations for different genres, topics, interests etc.",
-    highlights: [],
+      "An app which you can add movies & TV shows to your profile. Explore new shows and movies based on your interests. Use AI Recommendation tool to get customized recommendations for different genres, topics, interests etc.",
+    highlights: [
+      "User authentication and authorization",
+      "Explore & track TV series and movies.",
+      "Get AI powered recommendations based on tracked media.",
+      "AI powered recommendations based on chosen media content.",
+    ],
     links: {
       github: "https://github.com/NureddinFarzaliyev/cinexplore-ai",
       youtube: "https://www.youtube.com/watch?v=RornFy5JA-A",
@@ -265,10 +427,16 @@ export const newProjectsData = [
   {
     title: "TechQuiz",
     date: "07.24",
-    brief: "",
+    brief: "Fullstack Quiz App based on tech topics.",
     description:
-      "This is a MERN Stack app to solve different quizes. You can create an account and login to start solving easy, medium or hard technical quizzes in different topics. You'll earn points while solving quizzes. With this points you can increase your level and climb up the leaderboard.",
-    highlights: [],
+      "MERN Stack app where you can solve different quizes. Create an account and login to start solving easy, medium or hard technical quizzes in different topics. You'll earn points while solving quizzes. With this points you can increase your level and climb up the leaderboard.",
+    highlights: [
+      "User authentication and authorization.",
+      "User profile with username and profile picture",
+      "Solving quizzes and earning points based on results.",
+      "Leveling up ranks",
+      "Leaderboard",
+    ],
     links: {
       github: "https://github.com/NureddinFarzaliyev/techquiz",
       youtube: "https://www.youtube.com/watch?v=0OlweN2az7A",
@@ -281,10 +449,14 @@ export const newProjectsData = [
   {
     title: "Task Manager",
     date: "06.24",
-    brief: "",
+    brief: "Fullstack Task Manager application",
     description:
       "Task Manager app with tags and time sorting made by using Javascript, Node.js and MongoDB. User data is stored on MongoDB. I've used Node.js to create a REST API to communicate with database. I used bcryptjs to hash passwords in order to make personal user data secure.",
-    highlights: [],
+    highlights: [
+      "User authentication & authorization.",
+      "Task CRUD.",
+      "Assign tags",
+    ],
     links: {
       github: "https://github.com/NureddinFarzaliyev/taskmanager",
       youtube: "https://www.youtube.com/watch?v=jBF3Lrv67xA",

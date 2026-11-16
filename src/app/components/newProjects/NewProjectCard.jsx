@@ -6,20 +6,22 @@ const NewProjectCard = ({ data }) => {
   return (
     <div
       className="bg-[#0a0a0a] hover:bg-[#111] transition-all
-      p-2 rounded-lg border border-white/[0.1] w-[400px] cursor-pointer h-full"
+      p-2 rounded-lg border border-white/[0.1] w-[400px] cursor-pointer h-full flex flex-col"
     >
       <Image
         src={data.image}
         width={400}
         height={200}
         alt={data.title}
-        className="rounded-lg object-cover border border-white/[0.1] aspect-video"
+        className="rounded-lg object-cover border border-white/[0.1] aspect-video object-top"
       />
-      <div className="mt-2 px-1 pb-2 flex flex-col gap-1">
-        <h3 className="text-lg font-bold">{data.title}</h3>
-        <p className="text-sm opacity-80">{data.date}</p>
-        <p className="text-sm opacity-80">{data.brief}</p>
-        <div className="mt-2 flex gap-2 items-center">
+      <div className="mt-2 px-1 pb-2 flex flex-col gap-1 h-full justify-between">
+        <div className="flex flex-col gap-1">
+          <h3 className="text-lg font-bold">{data.title}</h3>
+          <p className="text-sm opacity-80">{data.date}</p>
+          <p className="text-sm opacity-80">{data.brief}</p>
+        </div>
+        <div className="mt-2 flex gap-2 items-center justify-between">
           <Skills skills={data.skills} disableHover />
           <div className="shrink-0">
             <CompanyBadge company={data.company} />
