@@ -9,7 +9,7 @@ const Education = () => {
       id="education"
     >
       <SectionHeader text="education & certifications" />
-      <div className="flex flex-col py-20 gap-10">
+      <div className="flex flex-col sm:py-20 gap-10 max-sm:w-full">
         {educationData.map((education, index) => (
           <EventCard key={index} data={education} />
         ))}

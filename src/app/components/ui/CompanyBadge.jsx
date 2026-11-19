@@ -14,7 +14,7 @@ const CompanyBadge = ({ company }) => {
         width={28}
         className="rounded-lg shrink-0"
       />
-      <span className="ml-2 text-sm">@{company.title}</span>
+      <span className="ml-1 sm:ml-2 text-xs sm:text-sm">@{company.title}</span>
     </div>
   );
 };

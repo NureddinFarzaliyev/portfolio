@@ -38,7 +38,7 @@ const NewProjectCardPopup = ({ data }) => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                className="max-w-3xl h-[95vh] bg-[#0a0a0a] text-white rounded-xl border border-white/[0.1] relative p-4 overflow-y-auto"
+                className="max-w-3xl h-[90vh] sm:h-[95vh] bg-[#0a0a0a] text-white rounded-xl border border-white/[0.1] relative p-4 overflow-y-auto"
               >
                 <button
                   className="absolute top-2 right-2 bg-black opacity-50 p-1 rounded-lg hover:opacity-100 transition-all"
@@ -55,11 +55,11 @@ const NewProjectCardPopup = ({ data }) => {
                     className="rounded-lg object-cover object-top border border-white/[0.1] aspect-video w-full!"
                   />
                   <div className="flex flex-col gap-3">
-                    <DialogTitle className="text-2xl font-bold">
+                    <DialogTitle className="text-xl sm:text-2xl font-bold">
                       {data.title}
                     </DialogTitle>
                     <div className="flex gap-2 items-center">
-                      <span className="bg-[#1F1F23] h-8 px-2 rounded-lg w-fit text-sm text-white/80 flex items-center">
+                      <span className="bg-[#1F1F23] h-6 sm:h-8 px-1.5 sm:px-2 rounded-lg w-fit text-xs sm:text-sm text-white/80 flex items-center">
                         {data.date}
                       </span>
                       <CompanyBadge company={data.company} />
@@ -67,10 +67,12 @@ const NewProjectCardPopup = ({ data }) => {
                     <Skills skills={data.skills} fullList />
                     <div />
                     {data.description && (
-                      <p className="opacity-80">{data.description}</p>
+                      <p className="opacity-80 max-sm:text-sm">
+                        {data.description}
+                      </p>
                     )}
                     {data.highlights && data.highlights.length > 0 && (
-                      <ul className="list-disc list-inside opacity-80">
+                      <ul className="list-disc list-inside opacity-80 max-sm:text-sm">
                         {data.highlights.map((highlight, index) => (
                           <li key={index}>{highlight}</li>
                         ))}

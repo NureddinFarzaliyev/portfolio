@@ -9,7 +9,7 @@ const Experience = () => {
       id="experience"
     >
       <SectionHeader text="experience" />
-      <div className="flex flex-col py-20 gap-10">
+      <div className="flex flex-col sm:py-20 gap-10 max-sm:w-full">
         {experienceData.map((education, index) => (
           <EventCard key={index} data={education} />
         ))}

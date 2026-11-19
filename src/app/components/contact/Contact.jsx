@@ -18,7 +18,7 @@ const Contact = () => {
     <div className="mt-32" id="contact">
       <SectionHeader text="Contact" />
 
-      <div className="grid md:grid-cols-2 gap-10 px-4 sm:px-20 relative pt-20 md:pt-32 pb-20 md:pb-32 mb-10">
+      <div className="grid md:grid-cols-2 gap-10 px-4 sm:px-20 relative sm:pt-32 pb-20 md:pb-32 mb-10">
         {" "}
         {/* temp mb */}
         <div>
@@ -80,7 +80,7 @@ const Contact = () => {
                   href={link}
                   target="_blank"
                   key={i}
-                  className="flex items-center gap-2 text-white/40 font-medium text-lg hover:text-white transition-all"
+                  className="flex items-center gap-2 text-white/40 font-medium md:text-lg hover:text-white transition-all"
                 >
                   <span className="text-2xl mr-1">
                     <Icon />
