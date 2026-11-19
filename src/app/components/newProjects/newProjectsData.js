@@ -61,7 +61,7 @@ export const newProjectsData = [
   },
   {
     title: "Java Transactions API",
-    date: "08.26",
+    date: "07.26",
     brief:
       "REST API for financial transactions manager with user authentication.",
     description:
@@ -114,6 +114,30 @@ export const newProjectsData = [
       "tanstack",
       "tailwindcss",
     ],
+  },
+  {
+    title: "GirlsNode Mentorship",
+    date: "11.25-06.26",
+    brief: "Tasks for students in the Node.js course.",
+    description:
+      "Tasks for students in the Node.js course organized by GirlsCode & Matrix Academy. Includes various tasks and projects to practice Basic and Advanced Javascript, Typescript, Node.js, Express.js, MongoDB, MySQL, WebSockets and other related technologies.",
+    highlights: [],
+    links: {
+      github: "https://github.com/nureddinfarzaliyev/girlsnode-mentor",
+      youtube: "",
+      live: "",
+    },
+    image: "/projectThumbnails/nodejs-mentor.png",
+    skills: [
+      "javascript",
+      "typescript",
+      "nodejs",
+      "expressjs",
+      "mongodb",
+      "mysql",
+      "websocket",
+    ],
+    company: { title: "MatrixAcademy", logo: "/icons/matrix.png" },
   },
   {
     title: "Vue Spotify Client",
@@ -257,6 +281,32 @@ export const newProjectsData = [
     image: "/projectThumbnails/bdutgt.png",
     skills: ["react", "tailwind"],
     company: { title: "", logo: "" },
+  },
+  {
+    title: "Frontend Mentorship",
+    date: "03.25-10.25",
+    brief: "Tasks for students in the Frontend Development course.",
+    description:
+      "Tasks for students in the Frontend Development course organized by Matrix Academy. Includes various tasks and projects to practice Basic and Advanced Javascript, Typescript, React, Redux, Next.js, Supabase, TailwindCSS, Bootstrap and other related technologies.",
+    links: {
+      github: "https://github.com/nureddinfarzaliyev/front-wizards-mentor",
+      youtube: "",
+      live: "",
+    },
+    image: "/projectThumbnails/front-mentor.png",
+    skills: [
+      "html",
+      "css",
+      "javascript",
+      "typescript",
+      "react",
+      "redux",
+      "nextjs",
+      "supabase",
+      "tailwindcss",
+      "bootstrap",
+    ],
+    company: { title: "MatrixAcademy", logo: "/icons/matrix.png" },
   },
   {
     title: "Brendmoto ERP API",
